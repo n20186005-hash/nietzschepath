@@ -7,7 +7,7 @@ export default function TermsOfService() {
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
         <Link href="/" className="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-gray-500 hover:text-black dark:hover:text-white mb-12 transition-colors">
           <ArrowLeft className="w-4 h-4" />
-          Retour à l'accueil (返回首页)
+          Retour à l'accueil
         </Link>
         
         <h1 className="text-4xl md:text-5xl font-serif font-light mb-4 text-black dark:text-white">Conditions d'utilisation</h1>

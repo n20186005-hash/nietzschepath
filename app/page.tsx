@@ -98,7 +98,7 @@ export default function Home() {
       <header className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-6 py-20 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20 dark:opacity-40 transition-opacity duration-500">
           <img 
-            src="/images/home/hero-bg.jpg" 
+            src="/images/home/nietzschepath.jpg" 
             alt="Chemin de Nietzsche vue" 
             className="w-full h-full object-cover"
             onError={(e) => {
@@ -164,13 +164,45 @@ export default function Home() {
           </div>
           <div className="aspect-[4/5] overflow-hidden rounded-sm grayscale hover:grayscale-0 transition-all duration-1000">
             <img 
-              src="/images/gallery/village-view.jpg" 
+              src="/images/gallery/images(12).jpg" 
               alt="Village d'Èze perché" 
               className="w-full h-full object-cover"
               onError={(e) => {
                 e.currentTarget.src = "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=1000&auto=format&fit=crop";
               }}
             />
+          </div>
+        </section>
+
+        {/* Galerie */}
+        <section>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-serif text-black dark:text-white mb-4">Galerie Visuelle</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">
+              Aperçu des paysages spectaculaires le long du chemin. <br/>
+              <span className="text-xs uppercase tracking-widest mt-2 block">Images partagées par les voyageurs sur <a href="https://maps.app.goo.gl/qUr3Du6hvNA6diu89" target="_blank" rel="noopener noreferrer" className="underline hover:text-black dark:hover:text-white transition-colors">Google Maps</a></span>
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
+              <div key={num} className="aspect-square overflow-hidden bg-gray-100 dark:bg-[#111] rounded-sm relative group">
+                <img 
+                  src={`/images/gallery/images(${num}).jpg`} 
+                  alt={`Vue du chemin de Nietzsche ${num}`} 
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700 ease-out"
+                  onError={(e) => {
+                    // Fallback to unsplash if local images are not ready yet
+                    const fallbacks = [
+                      "https://images.unsplash.com/photo-1542103749-8ef59b94f47e?q=80&w=600&auto=format&fit=crop",
+                      "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=600&auto=format&fit=crop",
+                      "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=600&auto=format&fit=crop",
+                      "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?q=80&w=600&auto=format&fit=crop"
+                    ];
+                    e.currentTarget.src = fallbacks[num % 4];
+                  }}
+                />
+              </div>
+            ))}
           </div>
         </section>
 
