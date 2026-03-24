@@ -1,8 +1,9 @@
 "use client";
 
-import { MapPin, Star, Navigation, Quote, Clock, AlertTriangle, Compass, Camera, Info, ExternalLink, Moon, Sun } from "lucide-react";
+import { MapPin, Star, Navigation, Quote, Clock, AlertTriangle, Compass, Camera, Info, ExternalLink, Moon, Sun, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
 import Link from "next/link";
+import { useState, useRef } from "react";
 
 const REVIEWS = [
   {
@@ -81,6 +82,14 @@ const REVIEWS = [
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  const scrollCarousel = (direction: 'left' | 'right') => {
+    if (carouselRef.current) {
+      const scrollAmount = direction === 'left' ? -300 : 300;
+      carouselRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
 
   return (
     <main className="min-h-screen bg-[#fafafa] dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-200 font-sans selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-500">
@@ -175,34 +184,71 @@ export default function Home() {
         </section>
 
         {/* Galerie */}
-        <section>
-          <div className="text-center mb-16">
+        <section className="relative">
+          <div className="text-center mb-12">
             <h2 className="text-3xl font-serif text-black dark:text-white mb-4">Galerie Visuelle</h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
               Aperçu des paysages spectaculaires le long du chemin. <br/>
               <span className="text-xs uppercase tracking-widest mt-2 block">Images partagées par les voyageurs sur <a href="https://maps.app.goo.gl/qUr3Du6hvNA6diu89" target="_blank" rel="noopener noreferrer" className="underline hover:text-black dark:hover:text-white transition-colors">Google Maps</a></span>
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
-              <div key={num} className="aspect-square overflow-hidden bg-gray-100 dark:bg-[#111] rounded-sm relative group">
-                <img 
-                  src={`/images/gallery/images(${num}).jpg`} 
-                  alt={`Vue du chemin de Nietzsche ${num}`} 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                  onError={(e) => {
-                    // Fallback to unsplash if local images are not ready yet
-                    const fallbacks = [
-                      "https://images.unsplash.com/photo-1542103749-8ef59b94f47e?q=80&w=600&auto=format&fit=crop",
-                      "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=600&auto=format&fit=crop",
-                      "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=600&auto=format&fit=crop",
-                      "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?q=80&w=600&auto=format&fit=crop"
-                    ];
-                    e.currentTarget.src = fallbacks[num % 4];
-                  }}
-                />
-              </div>
-            ))}
+          
+          <div className="relative group">
+            {/* Left Navigation Button */}
+            <button 
+              onClick={() => scrollCarousel('left')}
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 p-3 bg-white/90 dark:bg-black/90 rounded-full shadow-lg border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200 hover:scale-110 transition-transform hidden md:flex opacity-0 group-hover:opacity-100"
+              aria-label="Previous image"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+
+            {/* Carousel Container */}
+            <div 
+              ref={carouselRef}
+              className="flex overflow-x-auto gap-4 snap-x snap-mandatory scrollbar-hide pb-4 px-2"
+              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            >
+              {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
+                <a 
+                  key={num} 
+                  href={`/images/gallery/images(${num}).jpg`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-none w-[80vw] sm:w-[45vw] md:w-[30vw] lg:w-[25vw] aspect-[4/5] overflow-hidden bg-gray-100 dark:bg-[#111] rounded-sm relative snap-center group/item block cursor-zoom-in"
+                >
+                  <img 
+                    src={`/images/gallery/images(${num}).jpg`} 
+                    alt={`Vue du chemin de Nietzsche ${num}`} 
+                    className="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-700 ease-out"
+                    onError={(e) => {
+                      // Fallback to unsplash if local images are not ready yet
+                      const fallbacks = [
+                        "https://images.unsplash.com/photo-1542103749-8ef59b94f47e?q=80&w=2000&auto=format&fit=crop",
+                        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=2000&auto=format&fit=crop",
+                        "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=2000&auto=format&fit=crop",
+                        "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?q=80&w=2000&auto=format&fit=crop"
+                      ];
+                      const fallbackUrl = fallbacks[num % 4];
+                      e.currentTarget.src = fallbackUrl;
+                      // Update parent link href if fallback is used
+                      if (e.currentTarget.parentElement) {
+                        e.currentTarget.parentElement.setAttribute('href', fallbackUrl);
+                      }
+                    }}
+                  />
+                </a>
+              ))}
+            </div>
+
+            {/* Right Navigation Button */}
+            <button 
+              onClick={() => scrollCarousel('right')}
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 p-3 bg-white/90 dark:bg-black/90 rounded-full shadow-lg border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200 hover:scale-110 transition-transform hidden md:flex opacity-0 group-hover:opacity-100"
+              aria-label="Next image"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
           </div>
         </section>
 
