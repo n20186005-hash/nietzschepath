@@ -162,7 +162,7 @@ export default function Home() {
               C'est ici, lors de l'hiver 1883-1884, que le philosophe allemand Friedrich Nietzsche a trouvé la clarté mentale nécessaire pour composer la troisième partie de son œuvre majeure, <span className="text-gray-900 dark:text-gray-200 italic">Ainsi parlait Zarathoustra</span>. La rudesse du terrain rocailleux, combinée à la beauté absolue du paysage, incarne parfaitement sa philosophie du dépassement de soi.
             </p>
           </div>
-          <div className="aspect-[4/5] overflow-hidden rounded-sm grayscale hover:grayscale-0 transition-all duration-1000">
+          <div className="aspect-[4/5] overflow-hidden rounded-sm transition-all duration-1000">
             <img 
               src="/images/gallery/images(12).jpg" 
               alt="Village d'Èze perché" 
@@ -189,7 +189,7 @@ export default function Home() {
                 <img 
                   src={`/images/gallery/images(${num}).jpg`} 
                   alt={`Vue du chemin de Nietzsche ${num}`} 
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700 ease-out"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   onError={(e) => {
                     // Fallback to unsplash if local images are not ready yet
                     const fallbacks = [
@@ -320,7 +320,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="md:absolute top-0 right-0 w-full md:w-2/3 h-[400px] md:h-full z-0 grayscale opacity-70">
+          <div className="md:absolute top-0 right-0 w-full md:w-2/3 h-[400px] md:h-full z-0 opacity-90 dark:opacity-70">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4077.5909351537507!2d7.358143635994624!3d43.72525638013801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc35d121a26e3%3A0x96fb3f935826b8f4!2sChemin%20de%20Nietzsche!5e0!3m2!1sen!2sus!4v1774318336452!5m2!1sen!2sus" 
               width="100%" 
