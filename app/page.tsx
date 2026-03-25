@@ -170,6 +170,9 @@ export default function Home() {
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-lg font-light">
               C'est ici, lors de l'hiver 1883-1884, que le philosophe allemand Friedrich Nietzsche a trouvé la clarté mentale nécessaire pour composer la troisième partie de son œuvre majeure, <span className="text-gray-900 dark:text-gray-200 italic">Ainsi parlait Zarathoustra</span>. La rudesse du terrain rocailleux, combinée à la beauté absolue du paysage, incarne parfaitement sa philosophie du dépassement de soi.
             </p>
+            <p className="text-gray-500 text-sm mt-8 italic">
+              Disclaimer: This website is an independent third-party travel guide, providing objective historical context and visitor suggestions. It is not affiliated with the official management of Chemin de Nietzsche.
+            </p>
           </div>
           <div className="aspect-[4/5] overflow-hidden rounded-sm transition-all duration-1000">
             <img 
@@ -394,6 +397,9 @@ export default function Home() {
             <p>Support technique : <a href="mailto:claritleonelmnicol@gmail.com" className="hover:text-black dark:hover:text-white transition-colors underline decoration-gray-300 dark:decoration-gray-800 underline-offset-4">claritleonelmnicol@gmail.com</a></p>
           </div>
         </div>
+        <p className="text-gray-400 dark:text-gray-600 font-serif tracking-widest mb-2">
+          This website is an independent third-party travel guide, providing objective historical context and visitor suggestions. It is not affiliated with the official management of Chemin de Nietzsche.
+        </p>
         <p className="text-gray-400 dark:text-gray-600 font-serif tracking-widest">
           © {new Date().getFullYear()} NIETZSCHE PATH · TOUS DROITS RÉSERVÉS.
         </p>
