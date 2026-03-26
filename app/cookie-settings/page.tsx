@@ -1,5 +1,19 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Paramètres des cookies | Nietzsche Path",
+  alternates: {
+    canonical: '/cookie-settings',
+    languages: {
+      'fr': '/cookie-settings',
+      'en': '/en/cookie-settings',
+      'zh': '/zh/cookie-settings',
+      'x-default': '/cookie-settings',
+    },
+  },
+};
 
 export default function CookieSettings() {
   return (

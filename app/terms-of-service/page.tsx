@@ -1,5 +1,19 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Conditions d'utilisation | Nietzsche Path",
+  alternates: {
+    canonical: '/terms-of-service',
+    languages: {
+      'fr': '/terms-of-service',
+      'en': '/en/terms-of-service',
+      'zh': '/zh/terms-of-service',
+      'x-default': '/terms-of-service',
+    },
+  },
+};
 
 export default function TermsOfService() {
   return (

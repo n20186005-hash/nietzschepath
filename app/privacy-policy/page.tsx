@@ -1,5 +1,19 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Politique de confidentialité | Nietzsche Path",
+  alternates: {
+    canonical: '/privacy-policy',
+    languages: {
+      'fr': '/privacy-policy',
+      'en': '/en/privacy-policy',
+      'zh': '/zh/privacy-policy',
+      'x-default': '/privacy-policy',
+    },
+  },
+};
 
 export default function PrivacyPolicy() {
   return (

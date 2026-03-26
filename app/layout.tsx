@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "./ThemeProvider";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.nietzschepath.com'),
   title: "Chemin de Nietzsche | Nietzsche Path",
   description: "Guide to Chemin de Nietzsche (Nietzsche Trail) in Èze, France. A minimalist guide with essential info.",
   openGraph: {
@@ -12,6 +13,15 @@ export const metadata: Metadata = {
     siteName: "Chemin de Nietzsche",
     locale: "fr_FR",
     type: "website",
+  },
+  alternates: {
+    canonical: '/',
+    languages: {
+      'fr': '/',
+      'en': '/en',
+      'zh': '/zh',
+      'x-default': '/',
+    },
   },
 };
 
