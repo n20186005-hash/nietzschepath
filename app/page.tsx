@@ -107,7 +107,7 @@ export default function Home() {
       <header className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-6 py-20 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20 dark:opacity-40 transition-opacity duration-500">
           <img 
-            src="/images/home/nietzschepath.jpg" 
+            src="/images/home/nietzsche-path-hero.jpg" 
             alt="Chemin de Nietzsche vue" 
             className="w-full h-full object-cover"
             onError={(e) => {
@@ -177,7 +177,7 @@ export default function Home() {
           </div>
           <div className="aspect-[4/5] overflow-hidden rounded-sm transition-all duration-1000">
             <img 
-              src="/images/gallery/images(12).jpg" 
+              src="/images/gallery/nietzsche-path-gallery-12.jpg" 
               alt="Village d'Èze perché" 
               className="w-full h-full object-cover"
               onError={(e) => {
@@ -216,13 +216,13 @@ export default function Home() {
               {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
                 <a 
                   key={num} 
-                  href={`/images/gallery/images(${num}).jpg`}
+                  href={`/images/gallery/nietzsche-path-gallery-${num}.jpg`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-none w-[80vw] sm:w-[45vw] md:w-[30vw] lg:w-[25vw] aspect-[4/5] overflow-hidden bg-gray-100 dark:bg-[#111] rounded-sm relative snap-center group/item block cursor-zoom-in"
                 >
                   <img 
-                    src={`/images/gallery/images(${num}).jpg`} 
+                    src={`/images/gallery/nietzsche-path-gallery-${num}.jpg`} 
                     alt={`Vue du chemin de Nietzsche ${num}`} 
                     className="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-700 ease-out"
                     onError={(e) => {
