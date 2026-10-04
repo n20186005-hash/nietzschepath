@@ -89,6 +89,9 @@ export default function TopicPage({ topicKey }: TopicPageProps) {
         <section className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="rounded-[28px] border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-white/5">
             <h2 className="font-serif text-3xl text-black dark:text-white">Resume pratique</h2>
+            <p className="mt-4 text-base leading-7 text-stone-600 dark:text-stone-400">
+              {topic.description}
+            </p>
             <p className="mt-5 text-lg leading-8 text-stone-700 dark:text-stone-300">
               {topic.summary}
             </p>
