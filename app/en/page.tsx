@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import TrailGuidePage from "./components/TrailGuidePage";
-import { HERO_IMAGE, MAPS_URL, pageCopy } from "./content/trailData";
+import TrailGuidePage from "../components/TrailGuidePage";
+import { HERO_IMAGE, MAPS_URL, pageCopy } from "../content/trailData";
 
-const copy = pageCopy.fr;
+const copy = pageCopy.en;
 
 export const metadata: Metadata = {
   title: {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   description: copy.metadataDescription,
   alternates: {
-    canonical: "/",
+    canonical: "/en",
     languages: {
       fr: "/",
       en: "/en",
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: copy.metadataTitle,
     description: copy.metadataDescription,
-    url: "https://www.nietzschepath.com/",
+    url: "https://www.nietzschepath.com/en",
     siteName: "Nietzsche Path",
     locale: copy.locale,
     type: "website",
     images: [
       {
         url: HERO_IMAGE,
-        alt: "Chemin de Nietzsche a Eze",
+        alt: "Nietzsche Path in Eze",
       },
     ],
   },
@@ -38,14 +38,12 @@ export const metadata: Metadata = {
     images: [HERO_IMAGE],
   },
   keywords: [
-    "chemin de nietzsche",
-    "chemin de nietzsche eze",
-    "sentier de nietzsche",
-    "chemin de nietzsche carte",
-    "chemin de nietzsche difficulte",
-    "chemin de nietzsche duree",
-    "eze sur mer",
-    "randonnee eze",
+    "nietzsche path",
+    "nietzsche trail eze",
+    "eze nietzsche path",
+    "nietzsche path map",
+    "nietzsche path difficulty",
+    "nietzsche path hike",
   ],
   other: {
     "geo.region": "FR-06",
@@ -58,6 +56,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function HomePage() {
-  return <TrailGuidePage locale="fr" />;
+export default function EnglishPage() {
+  return <TrailGuidePage locale="en" />;
 }

@@ -3,25 +3,19 @@ import "./globals.css";
 import { ThemeProvider } from "./ThemeProvider";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.nietzschepath.com'),
-  title: "Chemin de Nietzsche | Nietzsche Path",
-  description: "Guide to Chemin de Nietzsche (Nietzsche Trail) in Èze, France. A minimalist guide with essential info.",
+  metadataBase: new URL("https://www.nietzschepath.com"),
+  title: {
+    default: "Nietzsche Path",
+    template: "%s | Nietzsche Path",
+  },
+  description: "Independent visitor guide to the Chemin de Nietzsche in Eze, France.",
   openGraph: {
-    title: "Chemin de Nietzsche | Nietzsche Path",
-    description: "Guide to Chemin de Nietzsche (Nietzsche Trail) in Èze, France.",
+    title: "Nietzsche Path",
+    description: "Independent visitor guide to the Chemin de Nietzsche in Eze, France.",
     url: "https://www.nietzschepath.com/",
-    siteName: "Chemin de Nietzsche",
+    siteName: "Nietzsche Path",
     locale: "fr_FR",
     type: "website",
-  },
-  alternates: {
-    canonical: '/',
-    languages: {
-      'fr': '/',
-      'en': '/en',
-      'zh': '/zh',
-      'x-default': '/',
-    },
   },
 };
 
