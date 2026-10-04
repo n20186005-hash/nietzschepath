@@ -1,5 +1,10 @@
 export type Locale = "fr" | "en";
 
+type FaqItem = {
+  question: string;
+  answer: string;
+};
+
 export const MAPS_URL = "https://maps.app.goo.gl/e6vchLoZPxMYTd28A";
 export const OFFICIAL_TRAIL_URL = "https://www.explorenicecotedazur.com/itineraire/chemin-de-nietzsche/";
 export const HERO_IMAGE = "/images/home/chemin-de-nietzsche-eze-hero.jpg";
@@ -77,6 +82,58 @@ export const galleryImages = [
     captionEn: "The upper arrival point is near the medieval village.",
   },
 ];
+
+export const homepageFaqs: Record<Locale, FaqItem[]> = {
+  fr: [
+    {
+      question: "Ou commence le Chemin de Nietzsche ?",
+      answer:
+        "Le depart le plus courant se situe pres de la gare SNCF d'Eze-sur-Mer, puis le sentier remonte jusqu'a Eze Village.",
+    },
+    {
+      question: "Quelle gare pour le Chemin de Nietzsche ?",
+      answer:
+        "La gare la plus pratique pour commencer la randonnee est Eze-sur-Mer. C'est le repere le plus utile pour la plupart des visiteurs qui arrivent en train.",
+    },
+    {
+      question: "Le Chemin de Nietzsche est-il difficile ?",
+      answer:
+        "Le niveau est generalement considere comme modere, avec une montee plus exigeante si vous partez depuis la mer, surtout en periode chaude.",
+    },
+    {
+      question: "Ou voir la carte du Chemin de Nietzsche ?",
+      answer:
+        "Le plus simple est d'utiliser Google Maps avec deux reperes clairs : la gare d'Eze-sur-Mer en bas et Eze Village en haut.",
+    },
+    {
+      question: "Peut-on acceder au Chemin de Nietzsche en train ?",
+      answer:
+        "Oui. Le train jusqu'a Eze-sur-Mer est l'une des solutions les plus simples pour rejoindre le depart du sentier.",
+    },
+  ],
+  en: [
+    {
+      question: "Where does the Nietzsche Path start?",
+      answer:
+        "Most visitors start near Eze-sur-Mer train station and then hike up to Eze Village.",
+    },
+    {
+      question: "Which station should you use for the Nietzsche Path?",
+      answer:
+        "Eze-sur-Mer station is the most practical rail stop if you want to start the hike from the lower trailhead.",
+    },
+    {
+      question: "Is the Nietzsche Path difficult?",
+      answer:
+        "It is usually considered moderate, with the uphill route feeling more demanding in hot weather.",
+    },
+    {
+      question: "Where can you see the Nietzsche Path map?",
+      answer:
+        "Google Maps is the easiest option, using Eze-sur-Mer station as the lower reference point and Eze Village as the upper one.",
+    },
+  ],
+};
 
 type PageCopy = {
   metadataTitle: string;
@@ -432,6 +489,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
 export function getStructuredData(locale: Locale) {
   const copy = pageCopy[locale];
   const pageUrl = `https://www.nietzschepath.com${copy.urlPath}`;
+  const faqItems = homepageFaqs[locale];
 
   return [
     {
@@ -508,6 +566,19 @@ export function getStructuredData(locale: Locale) {
       contentUrl: `https://www.nietzschepath.com${HERO_IMAGE}`,
       caption: locale === "fr" ? "Chemin de Nietzsche a Eze" : "Nietzsche Path in Eze",
       inLanguage: copy.htmlLang,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": `${pageUrl}#faq`,
+      mainEntity: faqItems.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
     },
   ];
 }

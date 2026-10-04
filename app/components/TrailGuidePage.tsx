@@ -24,11 +24,13 @@ import {
   galleryImages,
   getStructuredData,
   HERO_IMAGE,
+  homepageFaqs,
   Locale,
   MAPS_URL,
   OFFICIAL_TRAIL_URL,
   pageCopy,
 } from "../content/trailData";
+import { topicLinks } from "../content/topicPages";
 
 type TrailGuidePageProps = {
   locale: Locale;
@@ -39,6 +41,7 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
   const copy = pageCopy[locale];
   const carouselRef = useRef<HTMLDivElement>(null);
   const structuredData = getStructuredData(locale);
+  const faqs = homepageFaqs[locale];
   const localizedFacts = {
     distance: locale === "fr" ? "2,1 km" : "2.1 km",
     durationUp: factValues.durationUp,
@@ -419,6 +422,53 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
             {copy.sections.hikers.linkLabel}
             <ExternalLink className="h-4 w-4" />
           </a>
+        </section>
+
+        <section className="rounded-[28px] border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-white/5 md:p-10">
+          <div className="max-w-3xl">
+            <h2 className="font-serif text-3xl text-black dark:text-white md:text-4xl">
+              Guides detailles du Chemin de Nietzsche
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-stone-700 dark:text-stone-300">
+              Pour les recherches plus precises comme la carte, la difficulte ou l'acces, ces pages dediees permettent de repondre avec plus de clarte et de profondeur.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {topicLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="rounded-2xl border border-stone-200 bg-stone-50 px-5 py-5 text-stone-700 transition hover:text-black dark:border-stone-800 dark:bg-black/20 dark:text-stone-300 dark:hover:text-white"
+              >
+                <p className="text-lg text-stone-900 dark:text-stone-100">{link.title}</p>
+                <p className="mt-2 text-sm leading-6">{link.description}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="rounded-[28px] border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-white/5 md:p-10">
+          <div className="max-w-3xl">
+            <h2 className="font-serif text-3xl text-black dark:text-white md:text-4xl">
+              {locale === "fr" ? "Questions frequentes sur le Chemin de Nietzsche" : "Frequently asked questions about the Nietzsche Path"}
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-stone-700 dark:text-stone-300">
+              {locale === "fr"
+                ? "Ces reponses ciblent les recherches les plus frequentes autour de la carte, de la difficulte, du depart et de l'acces en train."
+                : "These answers cover the most common searches about the map, difficulty, start point, and train access."}
+            </p>
+          </div>
+          <div className="mt-8 space-y-5">
+            {faqs.map((faq) => (
+              <div
+                key={faq.question}
+                className="rounded-2xl border border-stone-200 bg-stone-50 p-5 dark:border-stone-800 dark:bg-black/20"
+              >
+                <h3 className="text-lg text-stone-900 dark:text-stone-100">{faq.question}</h3>
+                <p className="mt-3 leading-7 text-stone-700 dark:text-stone-300">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
         </section>
       </div>
 
