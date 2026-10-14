@@ -88,7 +88,7 @@ export const homepageFaqs: Record<Locale, FaqItem[]> = {
     {
       question: "Où commence le Chemin de Nietzsche ?",
       answer:
-        "Le départ le plus courant se situe pres de la gare SNCF d’Èze-sur-Mer, puis le sentier remonte jusqu’à Èze Village.",
+        "Le départ le plus courant se situe près de la gare SNCF d’Èze-sur-Mer, puis le sentier remonte jusqu’à Èze Village.",
     },
     {
       question: "Quelle gare pour le Chemin de Nietzsche ?",
@@ -106,7 +106,7 @@ export const homepageFaqs: Record<Locale, FaqItem[]> = {
         "Le plus simple est d'utiliser Google Maps avec deux repères clairs : la gare d’Èze-sur-Mer en bas et Èze Village en haut.",
     },
     {
-      question: "Peut-on acceder au Chemin de Nietzsche en train ?",
+      question: "Peut-on accéder au Chemin de Nietzsche en train ?",
       answer:
         "Oui. Le train jusqu’à Èze-sur-Mer est l'une des solutions les plus simples pour rejoindre le départ du sentier.",
     },
@@ -130,7 +130,7 @@ export const homepageFaqs: Record<Locale, FaqItem[]> = {
     {
       question: "Where can you see the Nietzsche Path map?",
       answer:
-        "Google Maps is the easiest option, using Eze-sur-Mer station as the lower reference point and Eze Village as the upper one.",
+        "Google Maps is the easiest option, using Eze-sur-Mer station as the lower référence point and Eze Village as the upper one.",
     },
   ],
 };
@@ -275,22 +275,22 @@ export const pageCopy: Record<Locale, PageCopy> = {
       duration: {
         title: "Combien de temps pour faire le Chemin de Nietzsche ?",
         intro:
-          "La durée depend surtout du sens choisi et du nombre d'arrêts photo. La reference la plus fréquente est autour d'1h à 1h30 pour la montée.",
+          "La durée dépend surtout du sens choisi et du nombre d'arrêts photo. La référence la plus fréquente est autour d'1h à 1h30 pour la montée.",
         bullets: [
           "Montée : environ 1h à 1h30 depuis Èze-sur-Mer.",
           "Descente : environ 45 à 60 minutes depuis Èze Village.",
           "Ajoutez du temps si vous visitez le village, prenez beaucoup de photos ou marchez en plein été.",
-          "Un départ tot le matin rend l'effort plus confortable et la lumiere souvent meilleure.",
+          "Un départ tôt le matin rend l'effort plus confortable et la lumière souvent meilleure.",
         ],
       },
       start: {
         title: "Où commence le Chemin de Nietzsche ?",
         intro:
-          "Le départ bas se situe pres de la gare SNCF d’Èze-sur-Mer. Le sentier monte ensuite vers le village médiéval d’Èze, ce qui en fait une option très pratique si vous arrivez en train depuis Nice ou Monaco.",
+          "Le départ bas se situe près de la gare SNCF d’Èze-sur-Mer. Le sentier monte ensuite vers le village médiéval d’Èze, ce qui en fait une option très pratique si vous arrivez en train depuis Nice ou Monaco.",
         bullets: [
           "Train : descendre à la gare d’Èze-sur-Mer puis rejoindre le sentier à pied.",
           "Bus : vous pouvez aussi rejoindre Èze Village et faire la descente.",
-          "Parking : plus simple à gerer en haut si vous combinez avec la visite du village.",
+          "Parking : plus simple à gérer en haut si vous combinez avec la visite du village.",
           "Astuce : vérifiez toujours la chaleur et emportez de l'eau avant de partir.",
         ],
       },
@@ -300,7 +300,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
         rows: [
           { label: "Départ", up: "Èze-sur-Mer", down: "Èze Village" },
           { label: "Effort", up: "Plus exigeant", down: "Plus facile au cardio" },
-          { label: "Vue mer", up: "Reguliere", down: "Souvent face à vous" },
+          { label: "Vue mer", up: "Régulière", down: "Souvent face à vous" },
           { label: "Durée", up: "1h à 1h30", down: "45 à 60 min" },
           { label: "Idéal pour", up: "Randonneurs motivés", down: "Visiteurs occasionnels" },
         ],
@@ -325,7 +325,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
           "Prenez au moins 1 à 1,5 litre d'eau par personne en saison chaude.",
           "Choisissez des chaussures stables sur terrain sec comme sur marches de pierre.",
           "Évitez les heures les plus chaudes en été.",
-          "Le matin offre souvent une lumiere plus douce et moins de foule.",
+          "Le matin offre souvent une lumière plus douce et moins de foule.",
           "Gardez du temps pour visiter Èze Village ou pour revenir en bus ou en train.",
         ],
       },
@@ -337,7 +337,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
           "Les vues ouvertes sur la Méditerranée tout au long du parcours.",
           "Une montée courte mais bien physique.",
           "Le contraste entre mer, rochers, pins et village médiéval.",
-          "La descente comme option plus accessible pour les visiteurs occasionnels.",
+          "La descente comme option plus accèssible pour les visiteurs occasionnels.",
           "La chaleur estivale et le manque d'ombre comme principaux points d'attention.",
         ],
         linkLabel: "Voir les avis récents sur Google Maps",
@@ -345,9 +345,9 @@ export const pageCopy: Record<Locale, PageCopy> = {
     },
     footer: {
       disclaimer:
-        "Ce site est un guide de voyage indépendant consacre au Chemin de Nietzsche. Il n'est pas affilié à la gestion officielle du site.",
+        "Ce site est un guide de voyage indépendant consacré au Chemin de Nietzsche. Il n'est pas affilié à la gestion officielle du site.",
       sources:
-        "Les informations pratiques sont consolidees à partir de ressources publiques, dont Google Maps et la fiche randonnée officielle Nice Côte d'Azur.",
+        "Les informations pratiques sont consolidées à partir de ressources publiques, dont Google Maps et la fiche randonnée officielle Nice Côte d'Azur.",
       copyright: "Tous droits réservés.",
       support: "Support technique",
     },
@@ -362,7 +362,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
     heroEyebrow: "Hike in Eze, France",
     h1: "Nietzsche Path",
     heroLead:
-      "A scenic trail linking Eze-sur-Mer to medieval Eze Village, with Mediterranean views, a steady climb, and easy access from the train station.",
+      "A scenic trail linking Eze-sur-Mer to medieval Eze Village, with Mediterranean views, a steady climb, and easy accèss from the train station.",
     altNamesLabel: "Also searched as",
     altNames: ["Chemin de Nietzsche", "Nietzsche Trail", "Chemin de Nietzsche Eze"],
     ratingLabel: "4.5/5 on Google Maps",
@@ -409,7 +409,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
       duration: {
         title: "How long does it take to hike the Nietzsche Path?",
         intro:
-          "Timing depends on direction, weather, and photo stops. The most common reference point is around 1 to 1.5 hours for the uphill hike.",
+          "Timing dépends on direction, weather, and photo stops. The most common référence point is around 1 to 1.5 hours for the uphill hike.",
         bullets: [
           "Uphill: about 1 to 1.5 hours from Eze-sur-Mer.",
           "Downhill: about 45 to 60 minutes from Eze Village.",
@@ -448,7 +448,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
         title: "History and context",
         paragraphs: [
           "The trail is associated with Friedrich Nietzsche, who stayed on the French Riviera several times from 1883 onward. The walk between the sea and the village is often linked to the period when he worked on the third part of Thus Spoke Zarathustra.",
-          "Documents shared by the Èze tourist information office provide literary context for Nietzsche’s Riviera walks, including Christian Arthaud and Éric L. Paul, La Côte d’Azur des écrivains (Édisud, pp. 140–144). This remains an independent, unofficial visitor guide.",
+          "Documents shared by the Èze tourist information office provide literary context for Nietzsche’s Riviera walks, including Christian Arthaud and Éric L. Paul, La Côte d’Azur des écrivains (Édisud, pp. 140–144). This remains an indépendent, unofficial visitor guide.",
         ],
       },
       tips: {
@@ -478,7 +478,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
     },
     footer: {
       disclaimer:
-        "This website is an independent travel guide about the Nietzsche Path and is not affiliated with the official site management.",
+        "This website is an indépendent travel guide about the Nietzsche Path and is not affiliated with the official site management.",
       sources:
         "Practical facts are compiled from public sources, including Google Maps and the official Nice Cote d'Azur hiking page.",
       copyright: "All rights reserved.",
