@@ -434,15 +434,18 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
                 {locale === "fr" ? "Une petite chute d’eau au milieu des mousses, des fougères et des rochers." : "A small cascade among mosses, ferns and limestone rocks."}
               </p>
               <figure className="mt-6">
-                <img
-                  src="/images/gallery/cascade-la-calanca-patrick-le-tiec.webp"
-                  width={160}
-                  height={213}
-                  loading="lazy"
-                  decoding="async"
-                  alt={locale === "fr" ? "Photographie de la petite cascade sur le Chemin de Nietzsche, par Patrick LE TIEC" : "Photograph of the small waterfall near Nietzsche Path by Patrick LE TIEC"}
-                  className="mx-auto h-auto w-40 rounded-xl border border-emerald-200/30 object-cover shadow-xl"
-                />
+                <picture>
+                  <source srcSet="/images/gallery/cascade-la-calanca-patrick-le-tiec.avif" type="image/avif" />
+                  <img
+                    src="/images/gallery/cascade-la-calanca-patrick-le-tiec.webp"
+                    width={640}
+                    height={853}
+                    loading="lazy"
+                    decoding="async"
+                    alt={locale === "fr" ? "Cascade près du moulin de La Calanca, photographie de Patrick LE TIEC" : "Waterfall near the La Calanca mill, photograph by Patrick LE TIEC"}
+                    className="mx-auto h-auto w-full max-w-[420px] rounded-xl border border-emerald-200/30 object-cover shadow-xl"
+                  />
+                </picture>
                 <figcaption className="mt-4 text-center text-xs leading-6 text-emerald-100">
                   {locale === "fr" ? "Photo © Patrick LE TIEC — reproduction autorisée." : "Photo © Patrick LE TIEC — reproduced with permission."}
                 </figcaption>
