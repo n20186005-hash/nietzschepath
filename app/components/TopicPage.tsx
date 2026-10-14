@@ -26,7 +26,7 @@ export default function TopicPage({ topicKey }: TopicPageProps) {
       <button
         onClick={toggleTheme}
         className="fixed right-5 top-5 z-50 rounded-full border border-stone-200 bg-white/85 p-3 shadow-sm backdrop-blur dark:border-stone-800 dark:bg-black/80"
-        aria-label="Changer de theme"
+        aria-label="Changer de thème"
       >
         {theme === "dark" ? (
           <Sun className="h-5 w-5 text-amber-400" />
@@ -80,7 +80,7 @@ export default function TopicPage({ topicKey }: TopicPageProps) {
 
       <div className="mx-auto max-w-6xl space-y-20 px-6 py-20">
         <section className="rounded-[28px] border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-white/5">
-          <h2 className="font-serif text-3xl text-black dark:text-white">Reponse rapide</h2>
+          <h2 className="font-serif text-3xl text-black dark:text-white">Réponse rapide</h2>
           <p className="mt-5 text-xl leading-9 text-stone-800 dark:text-stone-200">
             {topic.snippetLead}
           </p>
@@ -88,7 +88,7 @@ export default function TopicPage({ topicKey }: TopicPageProps) {
 
         <section className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="rounded-[28px] border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-white/5">
-            <h2 className="font-serif text-3xl text-black dark:text-white">Resume pratique</h2>
+            <h2 className="font-serif text-3xl text-black dark:text-white">Résumé pratique</h2>
             <p className="mt-4 text-base leading-7 text-stone-600 dark:text-stone-400">
               {topic.description}
             </p>
@@ -140,7 +140,7 @@ export default function TopicPage({ topicKey }: TopicPageProps) {
             </div>
 
             <div className="mt-8 border-t border-stone-800 pt-8">
-              <p className="text-xs uppercase tracking-[0.22em] text-stone-400">Reperes</p>
+              <p className="text-xs uppercase tracking-[0.22em] text-stone-400">Repères</p>
               <div className="mt-4 space-y-4 text-sm text-stone-300">
                 <div className="flex items-start gap-3">
                   <MapPin className="mt-0.5 h-4 w-4 flex-none" />
@@ -217,6 +217,20 @@ export default function TopicPage({ topicKey }: TopicPageProps) {
           </section>
         ))}
 
+
+        {topicKey === "acces" && (
+          <section className="rounded-[28px] border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-white/5">
+            <h2 className="font-serif text-3xl text-black dark:text-white">Horaires officiels : train et bus</h2>
+            <p className="mt-4 leading-8 text-stone-700 dark:text-stone-300">
+              Consultez les horaires à jour avant votre randonnée. Le TER dessert Èze-sur-Mer ; les itinéraires en bus vers Èze Village sont à vérifier sur Lignes d’Azur.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-4">
+              <a className="underline underline-offset-4" target="_blank" rel="noopener noreferrer" href="https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur/se-deplacer/horaires">TER SNCF — horaires des trains ↗</a>
+              <a className="underline underline-offset-4" target="_blank" rel="noopener noreferrer" href="https://www.lignesdazur.com/">Lignes d’Azur — bus et itinéraires ↗</a>
+            </div>
+          </section>
+        )}
+
         <section className="grid gap-6 lg:grid-cols-3">
           {topicGallery.map((image) => (
             <a
@@ -276,7 +290,7 @@ export default function TopicPage({ topicKey }: TopicPageProps) {
               className="rounded-2xl border border-stone-200 bg-stone-50 px-5 py-5 text-stone-700 transition hover:text-black dark:border-stone-800 dark:bg-black/20 dark:text-stone-300 dark:hover:text-white"
             >
               <p className="text-lg text-stone-900 dark:text-stone-100">Guide principal du Chemin de Nietzsche</p>
-              <p className="mt-2 text-sm leading-6">Page complete avec vue d'ensemble, duree, difficulte, acces, photos et contexte.</p>
+              <p className="mt-2 text-sm leading-6">Page complète avec vue d’ensemble, durée, difficulté, accès, photos et contexte.</p>
             </Link>
 
             {relatedLinks.map((link) => (
@@ -297,13 +311,13 @@ export default function TopicPage({ topicKey }: TopicPageProps) {
         <div className="mx-auto max-w-6xl space-y-6">
           <div className="flex flex-wrap gap-5">
             <Link href="/privacy-policy" className="transition hover:text-black dark:hover:text-white">
-              Politique de confidentialite
+              Politique de confidentialité
             </Link>
             <Link href="/terms-of-service" className="transition hover:text-black dark:hover:text-white">
               Conditions d'utilisation
             </Link>
             <Link href="/cookie-settings" className="transition hover:text-black dark:hover:text-white">
-              Parametres des cookies
+              Paramètres des cookies
             </Link>
           </div>
           <div className="space-y-2 leading-7">
