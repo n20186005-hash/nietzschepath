@@ -142,7 +142,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
     snippetLead:
       "Cette page répond directement à la question \\\"le Chemin de Nietzsche est-il difficile ?\\\" : la randonnée est généralement classée comme modérée, mais la montée depuis la gare d’Èze-sur-Mer peut sembler exigeante à cause du dénivelé, des marches et de la chaleur.",
     summary:
-      "La plupart des visiteurs classent le Chemin de Nietzsche comme une randonnée modérée. La distance est relativement courte, mais la montée, les marches et l'exposition au soleil rendent l'effort plus sérieux qu'il n'en à l'air sur le papier.",
+      "La plupart des visiteurs classent le Chemin de Nietzsche comme une randonnée modérée. La distance est relativement courte, mais la montée, les marches et l'exposition au soleil rendent l'effort plus sérieux qu'il n'en a l'air sur le papier.",
     quickFacts: [
       { label: "Niveau", value: "Modéré" },
       { label: "Terrain", value: "Rocheux et marches" },
@@ -161,7 +161,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
         title: "Ce qui rend la randonnée difficile",
         bullets: [
           "Montée continue depuis Èze-sur-Mer vers le village.",
-          "Escaliers et appuis parfois irreguliers.",
+          "Escaliers et appuis parfois irréguliers.",
           "Portions exposées au soleil avec peu d'ombre.",
           "Risque de fatigue plus marque en plein été ou en milieu de journee.",
           "Descente plus facile pour le cardio, mais plus sensible pour les genoux.",
