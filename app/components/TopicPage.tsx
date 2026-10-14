@@ -222,11 +222,11 @@ export default function TopicPage({ topicKey }: TopicPageProps) {
           <section className="rounded-[28px] border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-white/5">
             <h2 className="font-serif text-3xl text-black dark:text-white">Horaires officiels : train et bus</h2>
             <p className="mt-4 leading-8 text-stone-700 dark:text-stone-300">
-              Consultez les horaires à jour avant votre randonnée. Le TER dessert Èze-sur-Mer ; les itinéraires en bus vers Èze Village sont à vérifier sur Lignes d’Azur.
+              Consultez les horaires officiels avant votre randonnée : le TER dessert la halte d’Èze (Èze-sur-Mer), tandis que les itinéraires de bus vers Èze Village sont à vérifier sur le planificateur Lignes d’Azur. Les lignes et les horaires peuvent changer.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
-              <a className="underline underline-offset-4" target="_blank" rel="noopener noreferrer" href="https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur/se-deplacer/horaires">TER SNCF — horaires des trains ↗</a>
-              <a className="underline underline-offset-4" target="_blank" rel="noopener noreferrer" href="https://www.lignesdazur.com/">Lignes d’Azur — bus et itinéraires ↗</a>
+              <a className="underline underline-offset-4" target="_blank" rel="noopener noreferrer" href="https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur/se-deplacer/gares/eze-87756387">TER SNCF — horaires des trains ↗</a>
+              <a className="underline underline-offset-4" target="_blank" rel="noopener noreferrer" href="https://autourdemoi.lignesdazur.com/fr/">Lignes d’Azur — bus et itinéraires ↗</a>
             </div>
           </section>
         )}
