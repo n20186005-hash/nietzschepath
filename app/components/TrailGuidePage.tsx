@@ -86,7 +86,7 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
         <div className="absolute inset-0">
           <img
             src={HERO_IMAGE}
-            alt={locale === "fr" ? "Chemin de Nietzsche a Eze" : "Nietzsche Path in Eze"}
+            alt={locale === "fr" ? "Chemin de Nietzsche à Èze" : "Nietzsche Path in Eze"}
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/86 to-stone-50 dark:from-black/70 dark:via-black/80 dark:to-[#0a0a0a]" />
