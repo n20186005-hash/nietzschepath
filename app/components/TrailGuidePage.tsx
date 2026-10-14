@@ -410,14 +410,14 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
               </p>
               <p className="leading-8 text-stone-700 dark:text-stone-300">
                 {locale === "fr"
-                  ? "L’étude « Le moulin oublié de La Calanca (Èze) », par Henri Geist et André Tiret, décrit un canal d’amenée d’eau, un réservoir, une meule et les vestiges d’un moulin à huile probablement daté de la première moitié du XIXe siècle, d’après les auteurs. D’anciens bassins de retenue subsistent en amont, cachés dans la végétation."
-                  : "The study “Le moulin oublié de La Calanca (Èze)” by Henri Geist and André Tiret describes the water channel, reservoir, mill remains and a millstone. Old retention basins still survive uphill in dense vegetation."}
+                  ? "L’étude « Le moulin oublié de La Calanca (Èze) », par Henri Geist et André Tiret, retrace l’histoire du moulin à huile et de son fonctionnement hydraulique. D’après les auteurs, ces vestiges pourraient dater de la première moitié du XIXe siècle."
+                  : "Henri Geist and André Tiret document the history and hydraulic operation of the former olive-oil mill in their study “Le moulin oublié de La Calanca (Èze)”. They suggest that some of its remains may date from the first half of the 19th century."}
               </p>
               <p className="rounded-2xl border border-amber-300/50 bg-amber-50 px-5 py-4 text-sm leading-7 text-stone-800 dark:border-amber-700/40 dark:bg-amber-950/20 dark:text-stone-200">
                 <strong>{locale === "fr" ? "Sécurité : " : "Safety: "}</strong>
                 {locale === "fr"
-                  ? "Les bassins situés au-dessus du moulin sont difficiles d’accès et potentiellement dangereux. Ne quittez pas l’itinéraire principal pour les rejoindre. Évitez les rochers humides et respectez les consignes sur place."
-                  : "The uphill basins are hard to access and potentially dangerous. Do not leave the main path to reach them. Avoid wet rocks and follow all on-site guidance."}
+                  ? "Restez sur les sentiers autorisés, évitez les rochers humides ou glissants et respectez les éventuelles restrictions d’accès et la signalisation sur place."
+                  : "Stay on authorized trails, avoid wet or slippery rocks, and follow all local signs and access restrictions."}
               </p>
               <a className="inline-flex items-center gap-2 text-sm font-medium underline underline-offset-4" href="https://www.google.com/maps/search/?api=1&query=43.72792421121981%2C7.364799274273176" target="_blank" rel="noopener noreferrer">
                 {locale === "fr" ? "Localiser la cascade sur Google Maps" : "Find the waterfall on Google Maps"} <ExternalLink className="h-4 w-4" />
@@ -435,8 +435,8 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
               </p>
               <p className="mt-5 text-sm leading-7 text-emerald-100">
                 {locale === "fr"
-                  ? "Une photographie de la cascade nous a été transmise par Patrick Le Tiec. Elle sera affichée après confirmation de l’autorisation de publication et du crédit photographique."
-                  : "A photograph was shared by Patrick Le Tiec. It will be displayed once publication permission and the preferred credit have been confirmed."}
+                  ? "Photographie © Patrick LE TIEC — publiée avec son aimable autorisation."
+                  : "Photo © Patrick LE TIEC — published with the photographer’s permission."}
               </p>
             </div>
           </div>
