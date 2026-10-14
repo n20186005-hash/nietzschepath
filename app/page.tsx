@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: HERO_IMAGE,
-        alt: "Chemin de Nietzsche a Eze",
+        alt: "Chemin de Nietzsche à Èze",
       },
     ],
   },
