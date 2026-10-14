@@ -1,6 +1,6 @@
 import { factValues, galleryImages, HERO_IMAGE, MAPS_URL, OFFICIAL_TRAIL_URL, pageCopy } from "./trailData";
 
-export type TopicPageKey = "carte" | "difficulté" | "accès";
+export type TopicPageKey = "carte" | "difficulte" | "acces";
 
 type TopicSection = {
   title: string;
