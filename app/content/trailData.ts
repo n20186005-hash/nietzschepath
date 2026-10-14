@@ -130,7 +130,7 @@ export const homepageFaqs: Record<Locale, FaqItem[]> = {
     {
       question: "Where can you see the Nietzsche Path map?",
       answer:
-        "Google Maps is the easiest option, using Eze-sur-Mer station as the lower référence point and Eze Village as the upper one.",
+        "Google Maps is the easiest option, using Eze-sur-Mer station as the lower reference point and Eze Village as the upper one.",
     },
   ],
 };
@@ -337,7 +337,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
           "Les vues ouvertes sur la Méditerranée tout au long du parcours.",
           "Une montée courte mais bien physique.",
           "Le contraste entre mer, rochers, pins et village médiéval.",
-          "La descente comme option plus accèssible pour les visiteurs occasionnels.",
+          "La descente comme option plus accessible pour les visiteurs occasionnels.",
           "La chaleur estivale et le manque d'ombre comme principaux points d'attention.",
         ],
         linkLabel: "Voir les avis récents sur Google Maps",
@@ -362,7 +362,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
     heroEyebrow: "Hike in Eze, France",
     h1: "Nietzsche Path",
     heroLead:
-      "A scenic trail linking Eze-sur-Mer to medieval Eze Village, with Mediterranean views, a steady climb, and easy accèss from the train station.",
+      "A scenic trail linking Eze-sur-Mer to medieval Eze Village, with Mediterranean views, a steady climb, and easy access from the train station.",
     altNamesLabel: "Also searched as",
     altNames: ["Chemin de Nietzsche", "Nietzsche Trail", "Chemin de Nietzsche Eze"],
     ratingLabel: "4.5/5 on Google Maps",
@@ -409,7 +409,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
       duration: {
         title: "How long does it take to hike the Nietzsche Path?",
         intro:
-          "Timing dépends on direction, weather, and photo stops. The most common référence point is around 1 to 1.5 hours for the uphill hike.",
+          "Timing depends on direction, weather, and photo stops. The most common reference point is around 1 to 1.5 hours for the uphill hike.",
         bullets: [
           "Uphill: about 1 to 1.5 hours from Eze-sur-Mer.",
           "Downhill: about 45 to 60 minutes from Eze Village.",
@@ -448,7 +448,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
         title: "History and context",
         paragraphs: [
           "The trail is associated with Friedrich Nietzsche, who stayed on the French Riviera several times from 1883 onward. The walk between the sea and the village is often linked to the period when he worked on the third part of Thus Spoke Zarathustra.",
-          "Documents shared by the Èze tourist information office provide literary context for Nietzsche’s Riviera walks, including Christian Arthaud and Éric L. Paul, La Côte d’Azur des écrivains (Édisud, pp. 140–144). This remains an indépendent, unofficial visitor guide.",
+          "Documents shared by the Èze tourist information office provide literary context for Nietzsche’s Riviera walks, including Christian Arthaud and Éric L. Paul, La Côte d’Azur des écrivains (Édisud, pp. 140–144). This remains an independent, unofficial visitor guide.",
         ],
       },
       tips: {
@@ -478,7 +478,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
     },
     footer: {
       disclaimer:
-        "This website is an indépendent travel guide about the Nietzsche Path and is not affiliated with the official site management.",
+        "This website is an independent travel guide about the Nietzsche Path and is not affiliated with the official site management.",
       sources:
         "Practical facts are compiled from public sources, including Google Maps and the official Nice Cote d'Azur hiking page.",
       copyright: "All rights reserved.",
