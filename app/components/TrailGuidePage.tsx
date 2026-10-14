@@ -264,11 +264,11 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
             </p>
             <div className="mt-6 space-y-6">
               <RouteRow
-                label={locale === "fr" ? "Depart bas" : "Lower trailhead"}
+                label={locale === "fr" ? "Départ bas" : "Lower trailhead"}
                 value={factValues.start}
               />
               <RouteRow
-                label={locale === "fr" ? "Arrivee haute" : "Upper finish"}
+                label={locale === "fr" ? "Arrivée haute" : "Upper finish"}
                 value={factValues.end}
               />
               <RouteRow
@@ -294,10 +294,10 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
               : "For the uphill hike, check TER SNCF services to Èze-sur-Mer station. For buses to Èze Village before a downhill hike, consult Lignes d’Azur. Always check the timetables and connections for your travel date."}
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a href="https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur/se-deplacer/horaires" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-stone-300 px-5 py-3 text-sm font-medium hover:border-stone-900 dark:border-stone-700 dark:hover:border-white">
+            <a href="https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur/se-deplacer/gares/eze-87756387" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-stone-300 px-5 py-3 text-sm font-medium hover:border-stone-900 dark:border-stone-700 dark:hover:border-white">
               TER SNCF — {locale === "fr" ? "horaires des trains" : "train timetables"} <ExternalLink className="h-4 w-4" />
             </a>
-            <a href="https://www.lignesdazur.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-stone-300 px-5 py-3 text-sm font-medium hover:border-stone-900 dark:border-stone-700 dark:hover:border-white">
+            <a href="https://autourdemoi.lignesdazur.com/fr/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-stone-300 px-5 py-3 text-sm font-medium hover:border-stone-900 dark:border-stone-700 dark:hover:border-white">
               Lignes d’Azur — {locale === "fr" ? "bus et itinéraires" : "bus routes"} <ExternalLink className="h-4 w-4" />
             </a>
           </div>
@@ -405,19 +405,19 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
               </h2>
               <p className="leading-8 text-stone-700 dark:text-stone-300">
                 {locale === "fr"
-                  ? "Près d’un ancien moulin à huile sur le sentier se trouve une petite cascade, longtemps peu connue et désormais recherchée par certains randonneurs. Le lieu fait partie du patrimoine hydraulique et oléicole d’Èze."
+                  ? "Près d’un ancien moulin à huile sur le sentier se trouve une petite cascade, longtemps peu connue et désormais recherchée par certains randonneurs. Ce paysage témoigne du patrimoine hydraulique et oléicole d’Èze."
                   : "A small waterfall lies near an old olive-oil mill beside the trail. Once little known, it has recently attracted hikers and recalls Èze’s historic milling and water systems."}
               </p>
               <p className="leading-8 text-stone-700 dark:text-stone-300">
                 {locale === "fr"
-                  ? "L’étude « Le moulin oublié de La Calanca (Èze) », par Henri Geist et André Tiret, décrit notamment un canal d’amenée d’eau, un réservoir, les vestiges du moulin et une meule. D’anciens bassins de retenue subsistent en amont, cachés dans la végétation."
-                  : "The study « Le moulin oublié de La Calanca (Èze) », by Henri Geist and André Tiret, describes the historic water channel, reservoir, mill remains and millstone. Old retention basins still survive uphill in dense vegetation."}
+                  ? "L’étude « Le moulin oublié de La Calanca (Èze) », par Henri Geist et André Tiret, décrit un canal d’amenée d’eau, un réservoir, une meule et les vestiges d’un moulin à huile probablement daté de la première moitié du XIXe siècle, d’après les auteurs. D’anciens bassins de retenue subsistent en amont, cachés dans la végétation."
+                  : "The study “Le moulin oublié de La Calanca (Èze)” by Henri Geist and André Tiret describes the water channel, reservoir, mill remains and a millstone. Old retention basins still survive uphill in dense vegetation."}
               </p>
               <p className="rounded-2xl border border-amber-300/50 bg-amber-50 px-5 py-4 text-sm leading-7 text-stone-800 dark:border-amber-700/40 dark:bg-amber-950/20 dark:text-stone-200">
                 <strong>{locale === "fr" ? "Sécurité : " : "Safety: "}</strong>
                 {locale === "fr"
-                  ? "Les bassins situés au-dessus du moulin sont difficiles d’accès et potentiellement dangereux. Ne quittez pas le sentier balisé pour les rejoindre. Évitez les rochers humides et respectez les consignes sur place."
-                  : "The uphill basins are hard to access and potentially dangerous. Do not leave the marked trail to reach them. Avoid wet rocks and follow all on-site guidance."}
+                  ? "Les bassins situés au-dessus du moulin sont difficiles d’accès et potentiellement dangereux. Ne quittez pas l’itinéraire principal pour les rejoindre. Évitez les rochers humides et respectez les consignes sur place."
+                  : "The uphill basins are hard to access and potentially dangerous. Do not leave the main path to reach them. Avoid wet rocks and follow all on-site guidance."}
               </p>
               <a className="inline-flex items-center gap-2 text-sm font-medium underline underline-offset-4" href="https://www.google.com/maps/search/?api=1&query=43.72792421121981%2C7.364799274273176" target="_blank" rel="noopener noreferrer">
                 {locale === "fr" ? "Localiser la cascade sur Google Maps" : "Find the waterfall on Google Maps"} <ExternalLink className="h-4 w-4" />
@@ -435,8 +435,8 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
               </p>
               <p className="mt-5 text-sm leading-7 text-emerald-100">
                 {locale === "fr"
-                  ? "Photo transmise par Patrick Le Tiec. Nous confirmerons les droits de reproduction et la mention de crédit souhaitée avant publication."
-                  : "Photograph supplied by Patrick Le Tiec. Publication rights and the preferred photo credit will be confirmed before displaying it."}
+                  ? "Une photographie de la cascade nous a été transmise par Patrick Le Tiec. Elle sera affichée après confirmation de l’autorisation de publication et du crédit photographique."
+                  : "A photograph was shared by Patrick Le Tiec. It will be displayed once publication permission and the preferred credit have been confirmed."}
               </p>
             </div>
           </div>
@@ -494,10 +494,10 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
         <section className="rounded-[28px] border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-white/5 md:p-10">
           <div className="max-w-3xl">
             <h2 className="font-serif text-3xl text-black dark:text-white md:text-4xl">
-              Guides détaillés du Chemin de Nietzsche
+              {locale === "fr" ? "Guides détaillés du Chemin de Nietzsche" : "Detailed Nietzsche Path guides"}
             </h2>
             <p className="mt-4 text-lg leading-8 text-stone-700 dark:text-stone-300">
-              Pour les recherches plus précises comme la carte, la difficulté ou l’accès, ces pages dédiées permettent de répondre avec plus de clarté et de profondeur.
+              {locale === "fr" ? "Pour préparer votre marche, retrouvez nos pages détaillées sur la carte, la difficulté et les accès." : "Plan your walk with our detailed pages on maps, difficulty and getting there."}
             </p>
           </div>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
