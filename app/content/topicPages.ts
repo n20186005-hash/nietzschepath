@@ -66,6 +66,18 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
         ],
       },
       {
+        title: "La petite cascade et le moulin oublié de La Calanca",
+        paragraphs: [
+          "Près de l’ancien moulin à huile de La Calanca, une petite cascade a été signalée par le bureau d’information touristique d’Èze. Son emplacement peut être consulté sur Google Maps aux coordonnées 43.72792421121981, 7.364799274273176. Ce point ne doit pas être interprété comme une invitation à quitter le chemin.",
+          "Henri Geist et André Tiret décrivent le moulin et ses ouvrages hydrauliques dans « Le moulin oublié de la Calanca (Èze) », Archéam, saison 1997–1998, n° 5, p. 40–42. Les bassins en amont sont cachés dans les broussailles, difficiles d’accès et potentiellement dangereux.",
+        ],
+        bullets: [
+          "Restez sur l’itinéraire principal et respectez les éventuelles restrictions.",
+          "Ne cherchez pas à atteindre les anciens réservoirs ni à escalader les rochers humides.",
+          "Voir l’encadré historique et de sécurité détaillé sur la page d’accueil.",
+        ],
+      },
+      {
         title: "Montée ou descente sur la carte ?",
         table: {
           headers: ["Critère", "Montée", "Descente"],
@@ -123,6 +135,11 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
         href: "/acces-chemin-de-nietzsche",
         anchor: "Voir l'accès au Chemin de Nietzsche depuis la gare d’Èze-sur-Mer",
         description: "Train, bus, parking et organisation la plus simple pour rejoindre le départ du sentier.",
+      },
+      {
+        href: "/#cascade-moulin-la-calanca",
+        anchor: "Découvrir la cascade et l’ancien moulin de La Calanca",
+        description: "Repère GPS, origine du moulin, références historiques et avertissement de sécurité.",
       },
       {
         href: "/difficulte-chemin-de-nietzsche",
@@ -245,7 +262,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
     snippetLead:
       "Cette page répond directement à la question \\\"comment accéder au Chemin de Nietzsche ?\\\" : pour la montée, l'accès le plus simple se fait en train jusqu’à la gare d’Èze-sur-Mer ; pour une version plus facile, beaucoup de visiteurs commencent à Èze Village puis descendent.",
     summary:
-      "L'accès le plus pratique pour la montée se fait vià la gare d’Èze-sur-Mer. Pour une version plus simple, beaucoup de visiteurs rejoignent d'abord Èze Village en bus ou en voiture avant de redescendre à pied.",
+      "L'accès le plus pratique pour la montée se fait via la gare d’Èze-sur-Mer. Pour une version plus simple, beaucoup de visiteurs rejoignent d'abord Èze Village en bus ou en voiture avant de redescendre à pied.",
     quickFacts: [
       { label: "Train", value: factValues.start },
       { label: "Bus", value: "Possible vià Èze Village" },
