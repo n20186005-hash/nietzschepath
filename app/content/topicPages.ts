@@ -94,7 +94,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
         bullets: [
           "Ouvrez Google Maps avant de partir : le réseau mobile peut varier selon les portions.",
           "Repérez l'arrivée à Èze Village si vous faites la montée, ou la gare si vous faites la descente.",
-          "Prévoir eau et chaussures stables reste plus important que la technicité du tracé.",
+          "Prévoir de l’eau et des chaussures stables reste plus important que la technicité du tracé.",
           "Le sentier est court, mais il vaut mieux partir tôt quand il fait chaud.",
         ],
       },
@@ -203,7 +203,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
           "Chaussures fermes avec bonne accroche.",
           "1 à 1,5 litre d'eau par personne en saison chaude.",
           "Chapeau et protection solaire.",
-          "Éviter tongs, chaussures lisses ou départ trop tardif en été.",
+          "Évitez les tongs et les chaussures lisses ; partez tôt en été.",
         ],
       },
     ],
@@ -265,7 +265,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
       "L'accès le plus pratique pour la montée se fait via la gare d’Èze-sur-Mer. Pour une version plus simple, beaucoup de visiteurs rejoignent d'abord Èze Village en bus ou en voiture avant de redescendre à pied.",
     quickFacts: [
       { label: "Train", value: factValues.start },
-      { label: "Bus", value: "Possible vià Èze Village" },
+      { label: "Bus", value: "Possible via Èze Village" },
       { label: "Parking", value: "Plus simple en haut" },
       { label: "Arrivée", value: factValues.end },
     ],
@@ -341,7 +341,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
     internalLinks: [
       {
         href: "/carte-chemin-de-nietzsche",
-        anchor: "Voir la carte du Chemin de Nietzsche pour reperer le départ et l'arrivée",
+        anchor: "Voir la carte du Chemin de Nietzsche pour repérer le départ et l'arrivée",
         description: "Le tracé entre la gare d’Èze-sur-Mer et Èze Village est plus facile à comprendre sur une page dédiée.",
       },
       {
