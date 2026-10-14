@@ -1,6 +1,6 @@
 import { factValues, galleryImages, HERO_IMAGE, MAPS_URL, OFFICIAL_TRAIL_URL, pageCopy } from "./trailData";
 
-export type TopicPageKey = "carte" | "difficulte" | "accès";
+export type TopicPageKey = "carte" | "difficulte" | "acces";
 
 type TopicSection = {
   title: string;
@@ -44,7 +44,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
     snippetLead:
       "Cette page répond directement à la question \\\"où voir la carte du Chemin de Nietzsche ?\\\" avec le départ le plus courant près de la gare d’Èze-sur-Mer, l'arrivée à Èze Village et les repères les plus utiles pour suivre le tracé.",
     summary:
-      "Le tracé le plus recherché part de la gare d’Èze-sur-Mer, rejoint le sentier du Chemin de Nietzsche, puis remonte jusqu’àu village médiéval d’Èze. C'est l'itinéraire le plus simple à comprendre pour un visiteur qui prépare sa marche sur mobile.",
+      "Le tracé le plus recherché part de la gare d’Èze-sur-Mer, rejoint le sentier du Chemin de Nietzsche, puis remonte jusqu’au village médiéval d’Èze. C'est l'itinéraire le plus simple à comprendre pour un visiteur qui prépare sa marche sur mobile.",
     quickFacts: [
       { label: "Départ", value: factValues.start },
       { label: "Arrivée", value: factValues.end },
@@ -55,7 +55,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
       {
         title: "Itinéraire sur la carte",
         paragraphs: [
-          "Le point bas se situé près de la gare SNCF d’Èze-sur-Mer. De là, le sentier s'élève progressivement avec une alternance de portions cimentées, de marches et de passages rocheux avant d'atteindre Èze Village.",
+          "Le point bas se situe près de la gare SNCF d’Èze-sur-Mer. De là, le sentier s'élève progressivement avec une alternance de portions cimentées, de marches et de passages rocheux avant d'atteindre Èze Village.",
           "Si vous cherchez la carte du Chemin de Nietzsche, le plus utile est de mémoriser les trois repères suivants : gare d’Èze-sur-Mer, sentier du Chemin de Nietzsche, puis entrée du village médiéval.",
         ],
         bullets: [
@@ -96,7 +96,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
       {
         question: "Quel est le point de départ sur la carte ?",
         answer:
-          "Le départ le plus courant se situé à proximité de la gare SNCF d’Èze-sur-Mer.",
+          "Le départ le plus courant se situe à proximité de la gare SNCF d’Èze-sur-Mer.",
       },
       {
         question: "Peut-on faire la descente en suivant la même carte ?",
@@ -294,7 +294,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
       {
         question: "Où commence le Chemin de Nietzsche ?",
         answer:
-          "Le départ bas le plus connu se situé près de la gare SNCF d’Èze-sur-Mer.",
+          "Le départ bas le plus connu se situe près de la gare SNCF d’Èze-sur-Mer.",
       },
       {
         question: "Peut-on accéder au sentier en train ?",
