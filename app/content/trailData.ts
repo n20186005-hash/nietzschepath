@@ -56,9 +56,9 @@ export const galleryImages = [
   {
     src: "/images/gallery/chemin-de-nietzsche-vegetation-mediterraneenne.jpg",
     altFr: "Végétation méditerranéenne le long du Chemin de Nietzsche",
-    altEn: "Mediterranean végétation along the Nietzsche Path",
+    altEn: "Mediterranean vegetation along the Nietzsche Path",
     captionFr: "Pins, rochers et végétation typiques de la Riviera.",
-    captionEn: "Pines, rocks, and Riviera végétation along the route.",
+    captionEn: "Pines, rocks, and Riviera vegetation along the route.",
   },
   {
     src: "/images/gallery/chemin-de-nietzsche-escaliers-pierre.jpg",
@@ -77,9 +77,9 @@ export const galleryImages = [
   {
     src: "/images/gallery/arrivee-chemin-de-nietzsche-eze-village.jpg",
     altFr: "Arrivée vers le village médiéval d’Èze",
-    altEn: "Arrival near the médiéval village of Èze",
+    altEn: "Arrival near the medieval village of Èze",
     captionFr: "L'arrivée haute se fait à proximité du village médiéval.",
-    captionEn: "The upper arrival point is near the médiéval village.",
+    captionEn: "The upper arrival point is near the medieval village.",
   },
 ];
 
