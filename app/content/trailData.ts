@@ -15,7 +15,7 @@ export const factValues = {
   durationDown: "45 à 60 min",
   elevation: "350-400 m D+",
   difficulty: "Modérée",
-  start: "Gare d'Èze-sur-Mer",
+  start: "Gare d’Èze-sur-Mer",
   end: "Èze Village",
   rating: "4.5/5",
   reviewsLabelFr: "sur Google Maps",
@@ -50,7 +50,7 @@ export const galleryImages = [
     src: "/images/gallery/chemin-de-nietzsche-vers-eze-village.jpg",
     altFr: "Chemin piéton menant vers Èze Village",
     altEn: "Trail section leading toward Èze Village",
-    captionFr: "Le sentier monte progressivement vers le village perche.",
+    captionFr: "Le sentier monte progressivement vers le village perché.",
     captionEn: "The path climbs steadily toward the hilltop village.",
   },
   {
@@ -76,7 +76,7 @@ export const galleryImages = [
   },
   {
     src: "/images/gallery/arrivee-chemin-de-nietzsche-eze-village.jpg",
-    altFr: "Arrivée vers le village médiéval d'Èze",
+    altFr: "Arrivée vers le village médiéval d’Èze",
     altEn: "Arrival near the médiéval village of Èze",
     captionFr: "L'arrivée haute se fait à proximité du village médiéval.",
     captionEn: "The upper arrival point is near the médiéval village.",
@@ -88,7 +88,7 @@ export const homepageFaqs: Record<Locale, FaqItem[]> = {
     {
       question: "Où commence le Chemin de Nietzsche ?",
       answer:
-        "Le départ le plus courant se situe pres de la gare SNCF d'Èze-sur-Mer, puis le sentier remonte jusqu'a Èze Village.",
+        "Le départ le plus courant se situe pres de la gare SNCF d’Èze-sur-Mer, puis le sentier remonte jusqu’à Èze Village.",
     },
     {
       question: "Quelle gare pour le Chemin de Nietzsche ?",
@@ -103,12 +103,12 @@ export const homepageFaqs: Record<Locale, FaqItem[]> = {
     {
       question: "Où voir la carte du Chemin de Nietzsche ?",
       answer:
-        "Le plus simple est d'utiliser Google Maps avec deux repères clairs : la gare d'Èze-sur-Mer en bas et Èze Village en haut.",
+        "Le plus simple est d'utiliser Google Maps avec deux repères clairs : la gare d’Èze-sur-Mer en bas et Èze Village en haut.",
     },
     {
       question: "Peut-on acceder au Chemin de Nietzsche en train ?",
       answer:
-        "Oui. Le train jusqu'a Èze-sur-Mer est l'une des solutions les plus simples pour rejoindre le départ du sentier.",
+        "Oui. Le train jusqu’à Èze-sur-Mer est l'une des solutions les plus simples pour rejoindre le départ du sentier.",
     },
   ],
   en: [
@@ -228,7 +228,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
     heroEyebrow: "Randonnée à Èze, France",
     h1: "Chemin de Nietzsche",
     heroLead:
-      "Sentier reliant Èze-sur-Mer au village médiéval d'Èze, avec vues sur la Méditerranée, dénivelé soutenu et accès simple depuis la gare.",
+      "Sentier reliant Èze-sur-Mer au village médiéval d’Èze, avec vues sur la Méditerranée, dénivelé soutenu et accès simple depuis la gare.",
     altNamesLabel: "Aussi recherché sous",
     altNames: ["Chemin de Nietzsche Èze", "Sentier de Nietzsche", "Nietzsche Path"],
     ratingLabel: "4.5/5 sur Google Maps",
@@ -246,16 +246,16 @@ export const pageCopy: Record<Locale, PageCopy> = {
     },
     summaryTitle: "Chemin de Nietzsche à Èze",
     summaryBody:
-      "Distance : 2,1 km · Durée : environ 1h à 1h30 en montée · Dénivelé : 350 à 400 m D+ · Difficulté : modérée · Accès : gare d'Èze-sur-Mer.",
+      "Distance : 2,1 km · Durée : environ 1h à 1h30 en montée · Dénivelé : 350 à 400 m D+ · Difficulté : modérée · Accès : gare d’Èze-sur-Mer.",
     sections: {
       map: {
         title: "Carte du Chemin de Nietzsche",
-        body: "L'itinéraire le plus connu suit la gare d'Èze-sur-Mer, rejoint le Chemin de Nietzsche, puis remonte jusqu'a l'entrée d'Èze Village. C'est le tracé que recherchent le plus souvent les visiteurs sur mobile.",
+        body: "L'itinéraire le plus connu suit la gare d’Èze-sur-Mer, rejoint le Chemin de Nietzsche, puis remonte jusqu’à l'entrée d’Èze Village. C'est le tracé que recherchent le plus souvent les visiteurs sur mobile.",
         points: [
-          { label: "Départ", value: "Gare d'Èze-sur-Mer" },
+          { label: "Départ", value: "Gare d’Èze-sur-Mer" },
           { label: "Arrivée", value: "Èze Village" },
           { label: "Direction", value: "Bas vers haut ou l'inverse" },
-          { label: "Repere", value: "Plus code P9F6+Q5 Eze, France" },
+          { label: "Repère", value: "Plus code P9F6+Q5 Eze, France" },
         ],
         link: "Ouvrir la carte Google Maps",
         official: "Voir aussi la fiche randonnée officielle Nice Côte d'Azur",
@@ -263,7 +263,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
       difficulty: {
         title: "Difficulté du Chemin de Nietzsche",
         intro:
-          "Le Chemin de Nietzsche est généralement considéré comme modéré, mais la montée peut sembler soutenue quand il fait chaud ou si vous n'avez pas l'habitude des escaliers irreguliers.",
+          "Le Chemin de Nietzsche est généralement considéré comme modéré, mais la montée peut sembler soutenue quand il fait chaud ou si vous n'avez pas l'habitude des escaliers irréguliers.",
         bullets: [
           "Terrain rocheux avec marches et appuis parfois inégaux.",
           "Montée plus exigeante au cardio que la descente.",
@@ -286,17 +286,17 @@ export const pageCopy: Record<Locale, PageCopy> = {
       start: {
         title: "Où commence le Chemin de Nietzsche ?",
         intro:
-          "Le départ bas se situe pres de la gare SNCF d'Èze-sur-Mer. Le sentier monte ensuite vers le village médiéval d'Èze, ce qui en fait une option très pratique si vous arrivez en train depuis Nice ou Monaco.",
+          "Le départ bas se situe pres de la gare SNCF d’Èze-sur-Mer. Le sentier monte ensuite vers le village médiéval d’Èze, ce qui en fait une option très pratique si vous arrivez en train depuis Nice ou Monaco.",
         bullets: [
-          "Train : descendre à la gare d'Èze-sur-Mer puis rejoindre le sentier à pied.",
+          "Train : descendre à la gare d’Èze-sur-Mer puis rejoindre le sentier à pied.",
           "Bus : vous pouvez aussi rejoindre Èze Village et faire la descente.",
           "Parking : plus simple à gerer en haut si vous combinez avec la visite du village.",
-          "Astuce : verifiez toujours la chaleur et emportez de l'eau avant de partir.",
+          "Astuce : vérifiez toujours la chaleur et emportez de l'eau avant de partir.",
         ],
       },
       compare: {
         title: "Monter ou descendre le Chemin de Nietzsche ?",
-        headers: ["Critere", "Montée", "Descente"],
+        headers: ["Critère", "Montée", "Descente"],
         rows: [
           { label: "Départ", up: "Èze-sur-Mer", down: "Èze Village" },
           { label: "Effort", up: "Plus exigeant", down: "Plus facile au cardio" },
@@ -313,8 +313,9 @@ export const pageCopy: Record<Locale, PageCopy> = {
       history: {
         title: "Histoire et contexte",
         paragraphs: [
-          "Le sentier est associé à Friedrich Nietzsche, qui à séjourné à plusieurs reprises sur la Côte d'Azur à partir de 1883. La marche entre mer et village est souvent reliee à la période de création de la troisieme partie d'Ainsi parlait Zarathoustra.",
+          "Le sentier est associé à Friedrich Nietzsche, qui a séjourné à plusieurs reprises sur la Côte d'Azur à partir de 1883. La marche entre mer et village est souvent reliée à la période de création de la troisième partie d'Ainsi parlait Zarathoustra.",
           "Des documents sur Nietzsche et la Côte d’Azur, communiqués par le bureau d’information touristique d’Èze, éclairent la place des promenades dans son séjour sur la Riviera. La Côte d’Azur des écrivains (Christian Arthaud et Éric L. Paul, Édisud, p. 140–144) replace ses marches dans leur contexte littéraire.",
+          "Nietzsche évoque l’hiver niçois dans une lettre : « Les jours se succèdent ici d’une beauté que je qualifierais d’insolente. » Citation reproduite dans Christian Arthaud et Éric L. Paul, La Côte d’Azur des écrivains (Édisud), p. 142 ; la source secondaire est signalée pour permettre sa vérification.",
         ],
       },
       tips: {
