@@ -46,7 +46,7 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
     distance: locale === "fr" ? "2,1 km" : "2.1 km",
     durationUp: factValues.durationUp,
     elevation: locale === "fr" ? "350-400 m D+" : "350-400 m gain",
-    difficulty: locale === "fr" ? "Moderee" : "Moderate",
+    difficulty: locale === "fr" ? "Modérée" : "Moderate",
   };
 
   const scrollCarousel = (direction: "left" | "right") => {
@@ -260,7 +260,7 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
 
           <div className="rounded-[28px] border border-stone-200 bg-black p-8 text-stone-100 dark:border-stone-800">
             <p className="text-xs uppercase tracking-[0.22em] text-stone-400">
-              {locale === "fr" ? "Reperes pratiques" : "Practical markers"}
+              {locale === "fr" ? "Repères pratiques" : "Practical markers"}
             </p>
             <div className="mt-6 space-y-6">
               <RouteRow
@@ -280,6 +280,26 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
                 value={factValues.plusCode}
               />
             </div>
+          </div>
+        </section>
+
+
+        <section id="transports" aria-labelledby="transport-heading" className="rounded-[28px] border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-white/5 md:p-10">
+          <h2 id="transport-heading" className="font-serif text-3xl text-black dark:text-white">
+            {locale === "fr" ? "Venir en train ou en bus : horaires officiels" : "Arrive by train or bus: official timetables"}
+          </h2>
+          <p className="mt-4 leading-8 text-stone-700 dark:text-stone-300">
+            {locale === "fr"
+              ? "Pour monter depuis la mer, recherchez la gare d’Èze-sur-Mer sur TER SNCF. Pour rejoindre Èze Village et descendre à pied, consultez les itinéraires de Lignes d’Azur. Vérifiez les horaires et les correspondances à la date de votre visite."
+              : "For the uphill hike, check TER SNCF services to Èze-sur-Mer station. For buses to Èze Village before a downhill hike, consult Lignes d’Azur. Always check the timetables and connections for your travel date."}
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <a href="https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur/se-deplacer/horaires" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-stone-300 px-5 py-3 text-sm font-medium hover:border-stone-900 dark:border-stone-700 dark:hover:border-white">
+              TER SNCF — {locale === "fr" ? "horaires des trains" : "train timetables"} <ExternalLink className="h-4 w-4" />
+            </a>
+            <a href="https://www.lignesdazur.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-stone-300 px-5 py-3 text-sm font-medium hover:border-stone-900 dark:border-stone-700 dark:hover:border-white">
+              Lignes d’Azur — {locale === "fr" ? "bus et itinéraires" : "bus routes"} <ExternalLink className="h-4 w-4" />
+            </a>
           </div>
         </section>
 
@@ -335,7 +355,7 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
             <button
               onClick={() => scrollCarousel("left")}
               className="absolute left-0 top-1/2 z-10 hidden -translate-x-4 -translate-y-1/2 rounded-full border border-stone-200 bg-white/90 p-3 shadow-sm transition group-hover:flex dark:border-stone-800 dark:bg-black/85"
-              aria-label={locale === "fr" ? "Image precedente" : "Previous image"}
+              aria-label={locale === "fr" ? "Image précédente" : "Previous image"}
             >
               <ChevronLeft className="h-5 w-5" />
             </button>
@@ -372,6 +392,53 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
             >
               <ChevronRight className="h-5 w-5" />
             </button>
+          </div>
+        </section>
+
+
+        <section id="cascade-moulin-la-calanca" aria-labelledby="waterfall-heading" className="overflow-hidden rounded-[28px] border border-stone-200 bg-white shadow-sm dark:border-stone-800 dark:bg-white/5">
+          <div className="grid gap-0 lg:grid-cols-[1.15fr_0.85fr]">
+            <div className="space-y-5 p-8 md:p-10">
+              <p className="text-xs uppercase tracking-[0.22em] text-stone-500">{locale === "fr" ? "Patrimoine local méconnu" : "Little-known local heritage"}</p>
+              <h2 id="waterfall-heading" className="font-serif text-3xl text-black dark:text-white">
+                {locale === "fr" ? "La cascade et l’ancien moulin à huile de La Calanca" : "La Calanca waterfall and historic olive mill"}
+              </h2>
+              <p className="leading-8 text-stone-700 dark:text-stone-300">
+                {locale === "fr"
+                  ? "Près d’un ancien moulin à huile sur le sentier se trouve une petite cascade, longtemps peu connue et désormais recherchée par certains randonneurs. Le lieu fait partie du patrimoine hydraulique et oléicole d’Èze."
+                  : "A small waterfall lies near an old olive-oil mill beside the trail. Once little known, it has recently attracted hikers and recalls Èze’s historic milling and water systems."}
+              </p>
+              <p className="leading-8 text-stone-700 dark:text-stone-300">
+                {locale === "fr"
+                  ? "L’étude « Le moulin oublié de La Calanca (Èze) », par Henri Geist et André Tiret, décrit notamment un canal d’amenée d’eau, un réservoir, les vestiges du moulin et une meule. D’anciens bassins de retenue subsistent en amont, cachés dans la végétation."
+                  : "The study « Le moulin oublié de La Calanca (Èze) », by Henri Geist and André Tiret, describes the historic water channel, reservoir, mill remains and millstone. Old retention basins still survive uphill in dense vegetation."}
+              </p>
+              <p className="rounded-2xl border border-amber-300/50 bg-amber-50 px-5 py-4 text-sm leading-7 text-stone-800 dark:border-amber-700/40 dark:bg-amber-950/20 dark:text-stone-200">
+                <strong>{locale === "fr" ? "Sécurité : " : "Safety: "}</strong>
+                {locale === "fr"
+                  ? "Les bassins situés au-dessus du moulin sont difficiles d’accès et potentiellement dangereux. Ne quittez pas le sentier balisé pour les rejoindre. Évitez les rochers humides et respectez les consignes sur place."
+                  : "The uphill basins are hard to access and potentially dangerous. Do not leave the marked trail to reach them. Avoid wet rocks and follow all on-site guidance."}
+              </p>
+              <a className="inline-flex items-center gap-2 text-sm font-medium underline underline-offset-4" href="https://www.google.com/maps/search/?api=1&query=43.72792421121981%2C7.364799274273176" target="_blank" rel="noopener noreferrer">
+                {locale === "fr" ? "Localiser la cascade sur Google Maps" : "Find the waterfall on Google Maps"} <ExternalLink className="h-4 w-4" />
+              </a>
+              <p className="text-xs leading-6 text-stone-500 dark:text-stone-400">
+                {locale === "fr"
+                  ? "Source : Henri Geist et André Tiret, « Le moulin oublié de La Calanca (Èze) », Archéam, Cahiers du Cercle d’histoire et d’archéologie des Alpes-Maritimes, saison 1997–1998, n° 5, p. 40–42. Renseignement local communiqué par le bureau d’information touristique d’Èze."
+                  : "Reference: Henri Geist and André Tiret, « Le moulin oublié de La Calanca (Èze) », Archéam, 1997–1998, no. 5, pp. 40–42. Local information shared by the Èze tourist information office."}
+              </p>
+            </div>
+            <div className="flex min-h-[340px] flex-col justify-center bg-emerald-950 p-8 text-emerald-50 md:p-10">
+              <span className="text-xs uppercase tracking-[0.2em] text-emerald-200">{locale === "fr" ? "La cascade de La Calanca" : "La Calanca waterfall"}</span>
+              <p className="mt-4 font-serif text-2xl leading-snug">
+                {locale === "fr" ? "Une petite chute d’eau au milieu des mousses, des fougères et des rochers." : "A small cascade among mosses, ferns and limestone rocks."}
+              </p>
+              <p className="mt-5 text-sm leading-7 text-emerald-100">
+                {locale === "fr"
+                  ? "Photo transmise par Patrick Le Tiec. Nous confirmerons les droits de reproduction et la mention de crédit souhaitée avant publication."
+                  : "Photograph supplied by Patrick Le Tiec. Publication rights and the preferred photo credit will be confirmed before displaying it."}
+              </p>
+            </div>
           </div>
         </section>
 
@@ -427,10 +494,10 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
         <section className="rounded-[28px] border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-white/5 md:p-10">
           <div className="max-w-3xl">
             <h2 className="font-serif text-3xl text-black dark:text-white md:text-4xl">
-              Guides detailles du Chemin de Nietzsche
+              Guides détaillés du Chemin de Nietzsche
             </h2>
             <p className="mt-4 text-lg leading-8 text-stone-700 dark:text-stone-300">
-              Pour les recherches plus precises comme la carte, la difficulte ou l'acces, ces pages dediees permettent de repondre avec plus de clarte et de profondeur.
+              Pour les recherches plus précises comme la carte, la difficulté ou l’accès, ces pages dédiées permettent de répondre avec plus de clarté et de profondeur.
             </p>
           </div>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
@@ -450,11 +517,11 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
         <section className="rounded-[28px] border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-white/5 md:p-10">
           <div className="max-w-3xl">
             <h2 className="font-serif text-3xl text-black dark:text-white md:text-4xl">
-              {locale === "fr" ? "Questions frequentes sur le Chemin de Nietzsche" : "Frequently asked questions about the Nietzsche Path"}
+              {locale === "fr" ? "Questions fréquentes sur le Chemin de Nietzsche" : "Frequently asked questions about the Nietzsche Path"}
             </h2>
             <p className="mt-4 text-lg leading-8 text-stone-700 dark:text-stone-300">
               {locale === "fr"
-                ? "Ces reponses ciblent les recherches les plus frequentes autour de la carte, de la difficulte, du depart et de l'acces en train."
+                ? "Ces réponses ciblent les recherches les plus fréquentes autour de la carte, de la difficulté, du départ et de l’accès en train."
                 : "These answers cover the most common searches about the map, difficulty, start point, and train access."}
             </p>
           </div>
@@ -476,13 +543,13 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
         <div className="mx-auto max-w-6xl space-y-6">
           <div className="flex flex-wrap gap-5">
             <Link href="/privacy-policy" className="transition hover:text-black dark:hover:text-white">
-              {locale === "fr" ? "Politique de confidentialite" : "Privacy Policy"}
+              {locale === "fr" ? "Politique de confidentialité" : "Privacy Policy"}
             </Link>
             <Link href="/terms-of-service" className="transition hover:text-black dark:hover:text-white">
               {locale === "fr" ? "Conditions d'utilisation" : "Terms of Service"}
             </Link>
             <Link href="/cookie-settings" className="transition hover:text-black dark:hover:text-white">
-              {locale === "fr" ? "Parametres des cookies" : "Cookie Settings"}
+              {locale === "fr" ? "Paramètres des cookies" : "Cookie Settings"}
             </Link>
           </div>
 
