@@ -1,6 +1,6 @@
 import { factValues, galleryImages, HERO_IMAGE, MAPS_URL, OFFICIAL_TRAIL_URL, pageCopy } from "./trailData";
 
-export type TopicPageKey = "carte" | "difficulte" | "acces";
+export type TopicPageKey = "carte" | "difficulte" | "accès";
 
 type TopicSection = {
   title: string;
@@ -37,14 +37,14 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
     slug: "/carte-chemin-de-nietzsche",
     title: "Carte du Chemin de Nietzsche à Èze",
     description:
-      "Carte du Chemin de Nietzsche à Èze avec départ pres de la gare d’Èze-sur-Mer, arrivée à Èze Village et repères utiles pour suivre facilement le tracé.",
+      "Carte du Chemin de Nietzsche à Èze avec départ près de la gare d’Èze-sur-Mer, arrivée à Èze Village et repères utiles pour suivre facilement le tracé.",
     eyebrow: "Guide détaillé",
     hero:
       "Cette page rassemble les infos les plus utiles pour suivre la carte du Chemin de Nietzsche entre la gare d’Èze-sur-Mer et Èze Village.",
     snippetLead:
-      "Cette page répond directement à la question \\\"ou voir la carte du Chemin de Nietzsche ?\\\" avec le départ le plus courant pres de la gare d’Èze-sur-Mer, l'arrivée à Èze Village et les repères les plus utiles pour suivre le tracé.",
+      "Cette page répond directement à la question \\\"où voir la carte du Chemin de Nietzsche ?\\\" avec le départ le plus courant près de la gare d’Èze-sur-Mer, l'arrivée à Èze Village et les repères les plus utiles pour suivre le tracé.",
     summary:
-      "Le tracé le plus recherché part de la gare d’Èze-sur-Mer, rejoint le sentier du Chemin de Nietzsche, puis remonte jusqu’àu village médiéval d’Èze. C'est l'itinéraire le plus simple à comprendre pour un visiteur qui prepare sa marche sur mobile.",
+      "Le tracé le plus recherché part de la gare d’Èze-sur-Mer, rejoint le sentier du Chemin de Nietzsche, puis remonte jusqu’àu village médiéval d’Èze. C'est l'itinéraire le plus simple à comprendre pour un visiteur qui prépare sa marche sur mobile.",
     quickFacts: [
       { label: "Départ", value: factValues.start },
       { label: "Arrivée", value: factValues.end },
@@ -55,14 +55,14 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
       {
         title: "Itinéraire sur la carte",
         paragraphs: [
-          "Le point bas se situe pres de la gare SNCF d’Èze-sur-Mer. De la, le sentier s'élevé progressivement avec une alternance de portions cimentees, de marches et de passages rocheux avant d'atteindre Èze Village.",
-          "Si vous cherchez la carte du Chemin de Nietzsche, le plus utile est de memoriser les trois repères suivants : gare d’Èze-sur-Mer, sentier du Chemin de Nietzsche, puis entrée du village médiéval.",
+          "Le point bas se situé près de la gare SNCF d’Èze-sur-Mer. De là, le sentier s'élève progressivement avec une alternance de portions cimentées, de marches et de passages rocheux avant d'atteindre Èze Village.",
+          "Si vous cherchez la carte du Chemin de Nietzsche, le plus utile est de mémoriser les trois repères suivants : gare d’Èze-sur-Mer, sentier du Chemin de Nietzsche, puis entrée du village médiéval.",
         ],
         bullets: [
           "Départ bas : gare d’Èze-sur-Mer.",
           "Montée : sentier du Chemin de Nietzsche.",
           "Arrivée haute : Èze Village.",
-          "Repere rapide : plus code P9F6+Q5 Eze, France.",
+          "Repère rapide : plus code P9F6+Q5 Eze, France.",
         ],
       },
       {
@@ -81,9 +81,9 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
         title: "Conseils pour suivre la carte sans se perdre",
         bullets: [
           "Ouvrez Google Maps avant de partir : le réseau mobile peut varier selon les portions.",
-          "Reperez l'arrivée à Èze Village si vous faites la montée, ou la gare si vous faites la descente.",
+          "Repérez l'arrivée à Èze Village si vous faites la montée, ou la gare si vous faites la descente.",
           "Prévoir eau et chaussures stables reste plus important que la technicité du tracé.",
-          "Le sentier est court, mais il vaut mieux partir tot quand il fait chaud.",
+          "Le sentier est court, mais il vaut mieux partir tôt quand il fait chaud.",
         ],
       },
     ],
@@ -96,7 +96,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
       {
         question: "Quel est le point de départ sur la carte ?",
         answer:
-          "Le départ le plus courant se situe à proximité de la gare SNCF d’Èze-sur-Mer.",
+          "Le départ le plus courant se situé à proximité de la gare SNCF d’Èze-sur-Mer.",
       },
       {
         question: "Peut-on faire la descente en suivant la même carte ?",
@@ -106,12 +106,12 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
       {
         question: "Où est le départ du Chemin de Nietzsche sur la carte ?",
         answer:
-          "Le départ le plus souvent recherché sur la carte est situe pres de la gare SNCF d’Èze-sur-Mer.",
+          "Le départ le plus souvent recherché sur la carte est situé près de la gare SNCF d’Èze-sur-Mer.",
       },
       {
         question: "Quelle gare faut-il indiquer pour trouver la carte du sentier ?",
         answer:
-          "Pour trouver facilement le tracé, utilisez Èze-sur-Mer comme point de départ dans votre recherché Google Maps.",
+          "Pour trouver facilement le tracé, utilisez Èze-sur-Mer comme point de départ dans votre recherche Google Maps.",
       },
     ],
     ctas: [
@@ -138,7 +138,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
       "Difficulté du Chemin de Nietzsche à Èze : niveau généralement modéré, mais montée plus exigeante depuis la gare d’Èze-sur-Mer à cause du dénivelé, des marches et de la chaleur.",
     eyebrow: "Guide détaillé",
     hero:
-      "Le Chemin de Nietzsche est court, mais la difficulté ressentie depend beaucoup du soleil, du sens choisi et de votre habitude de marche en terrain irregulier.",
+      "Le Chemin de Nietzsche est court, mais la difficulté ressentie dépend beaucoup du soleil, du sens choisi et de votre habitude de marche en terrain irrégulier.",
     snippetLead:
       "Cette page répond directement à la question \\\"le Chemin de Nietzsche est-il difficile ?\\\" : la randonnée est généralement classée comme modérée, mais la montée depuis la gare d’Èze-sur-Mer peut sembler exigeante à cause du dénivelé, des marches et de la chaleur.",
     summary:
@@ -153,7 +153,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
       {
         title: "Quel niveau pour le Chemin de Nietzsche ?",
         paragraphs: [
-          "Pour un marcheur occasionnel, la montée peut sembler soutenue, surtout en été. Pour un randonneur habitue, le sentier reste relativement court mais demande tout de même un minimum de souffle et de stabilité.",
+          "Pour un marcheur occasionnel, la montée peut sembler soutenue, surtout en été. Pour un randonneur habitué, le sentier reste relativement court mais demande tout de même un minimum de souffle et de stabilité.",
           "Le vrai sujet n'est pas seulement la distance, mais la combinaison entre dénivelé, marches irrégulières, terrain rocheux et chaleur.",
         ],
       },
@@ -163,7 +163,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
           "Montée continue depuis Èze-sur-Mer vers le village.",
           "Escaliers et appuis parfois irréguliers.",
           "Portions exposées au soleil avec peu d'ombre.",
-          "Risque de fatigue plus marque en plein été ou en milieu de journee.",
+          "Risque de fatigue plus marqué en plein été ou en milieu de journée.",
           "Descente plus facile pour le cardio, mais plus sensible pour les genoux.",
         ],
       },
@@ -172,8 +172,8 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
         table: {
           headers: ["Profil", "Avis"],
           rows: [
-            ["Randonneur habitue", "Difficulté modérée, sortie assez courte"],
-            ["Visiteur occasionnel", "Faisable avec pauses et départ tot"],
+            ["Randonneur habitué", "Difficulté modérée, sortie assez courte"],
+            ["Visiteur occasionnel", "Faisable avec pauses et départ tôt"],
             ["Enfants", "Possible selon l'âge, sous surveillance"],
             ["Seniors", "À évaluer selon forme, chaleur et stabilité"],
             ["Par temps de pluie", "Moins recommandé à cause du terrain glissant"],
@@ -186,7 +186,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
           "Chaussures fermes avec bonne accroche.",
           "1 à 1,5 litre d'eau par personne en saison chaude.",
           "Chapeau et protection solaire.",
-          "Eviter tongs, chaussures lisses ou départ trop tardif en été.",
+          "Éviter tongs, chaussures lisses ou départ trop tardif en été.",
         ],
       },
     ],
@@ -229,7 +229,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
       },
       {
         href: "/acces-chemin-de-nietzsche",
-        anchor: "Verifier l'accès en train et le départ depuis la gare pour évaluer la difficulté",
+        anchor: "Vérifier l'accès en train et le départ depuis la gare pour évaluer la difficulté",
         description: "Choisir le bon point de départ change beaucoup la sensation d'effort.",
       },
     ],
@@ -243,7 +243,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
     hero:
       "Pour rejoindre le Chemin de Nietzsche, le plus simple est de choisir votre point de départ selon votre sens de marche : gare d’Èze-sur-Mer pour monter, Èze Village pour descendre.",
     snippetLead:
-      "Cette page répond directement à la question \\\"comment acceder au Chemin de Nietzsche ?\\\" : pour la montée, l'accès le plus simple se fait en train jusqu’à la gare d’Èze-sur-Mer ; pour une version plus facile, beaucoup de visiteurs commencent à Èze Village puis descendent.",
+      "Cette page répond directement à la question \\\"comment accéder au Chemin de Nietzsche ?\\\" : pour la montée, l'accès le plus simple se fait en train jusqu’à la gare d’Èze-sur-Mer ; pour une version plus facile, beaucoup de visiteurs commencent à Èze Village puis descendent.",
     summary:
       "L'accès le plus pratique pour la montée se fait vià la gare d’Èze-sur-Mer. Pour une version plus simple, beaucoup de visiteurs rejoignent d'abord Èze Village en bus ou en voiture avant de redescendre à pied.",
     quickFacts: [
@@ -276,7 +276,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
         title: "Accès depuis Nice",
         bullets: [
           "Prendre le train régional jusqu’à Èze-sur-Mer pour une montée directe.",
-          "Ou rejoindre Èze Village si vous voulez privilegier la descente.",
+          "Ou rejoindre Èze Village si vous voulez privilégier la descente.",
           "Vérifiez les horaires retour avant de partir, surtout hors haute saison.",
         ],
       },
@@ -294,7 +294,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
       {
         question: "Où commence le Chemin de Nietzsche ?",
         answer:
-          "Le départ bas le plus connu se situe pres de la gare SNCF d’Èze-sur-Mer.",
+          "Le départ bas le plus connu se situé près de la gare SNCF d’Èze-sur-Mer.",
       },
       {
         question: "Peut-on accéder au sentier en train ?",
@@ -340,7 +340,7 @@ export const topicLinks = [
   {
     href: topicPages.carte.slug,
     title: "Carte du Chemin de Nietzsche",
-    description: "Carte du Chemin de Nietzsche avec départ pres de la gare d’Èze-sur-Mer, arrivée à Èze Village et repères utiles pour suivre facilement le tracé.",
+    description: "Carte du Chemin de Nietzsche avec départ près de la gare d’Èze-sur-Mer, arrivée à Èze Village et repères utiles pour suivre facilement le tracé.",
   },
   {
     href: topicPages.difficulte.slug,
