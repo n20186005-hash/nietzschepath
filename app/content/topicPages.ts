@@ -69,12 +69,12 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
         title: "La petite cascade et le moulin oublié de La Calanca",
         paragraphs: [
           "Près de l’ancien moulin à huile de La Calanca, une petite cascade a été signalée par le bureau d’information touristique d’Èze. Son emplacement peut être consulté sur Google Maps aux coordonnées 43.72792421121981, 7.364799274273176. Ce point ne doit pas être interprété comme une invitation à quitter le chemin.",
-          "Henri Geist et André Tiret décrivent le moulin et ses ouvrages hydrauliques dans « Le moulin oublié de la Calanca (Èze) », Archéam, saison 1997–1998, n° 5, p. 40–42. Les bassins en amont sont cachés dans les broussailles, difficiles d’accès et potentiellement dangereux.",
+          "Pour comprendre l’histoire de cet ancien moulin à huile, voir Henri Geist et André Tiret, « Le moulin oublié de La Calanca (Èze) », Archéam, saison 1997–1998, n° 5, p. 40–42.",
         ],
         bullets: [
-          "Restez sur l’itinéraire principal et respectez les éventuelles restrictions.",
-          "Ne cherchez pas à atteindre les anciens réservoirs ni à escalader les rochers humides.",
-          "Voir l’encadré historique et de sécurité détaillé sur la page d’accueil.",
+          "Restez sur les itinéraires autorisés et respectez la signalisation sur place.",
+          "Évitez les rochers humides et les passages glissants ; ne vous aventurez pas hors du sentier.",
+          "Consultez la photographie de la cascade et la présentation historique sur la page d’accueil.",
         ],
       },
       {
