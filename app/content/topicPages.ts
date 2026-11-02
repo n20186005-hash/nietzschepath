@@ -1,6 +1,6 @@
 import { factValues, galleryImages, HERO_IMAGE, MAPS_URL, OFFICIAL_TRAIL_URL, pageCopy } from "./trailData";
 
-export type TopicPageKey = "carte" | "difficulte" | "acces";
+export type TopicPageKey = "carte" | "difficulte" | "acces" | "sens" | "histoire";
 
 type TopicSection = {
   title: string;
@@ -18,6 +18,7 @@ type TopicFaq = {
 };
 
 type TopicPageData = {
+  sources?: { label: string; href: string }[];
   slug: string;
   title: string;
   description: string;
@@ -33,6 +34,217 @@ type TopicPageData = {
 };
 
 export const topicPages: Record<TopicPageKey, TopicPageData> = {
+sens: {
+  "eyebrow": "Préparer sa visite",
+  "ctas": [
+    {
+      "label": "Fiche officielle du sentier",
+      "href": "https://www.explorenicecotedazur.com/itineraire/chemin-de-nietzsche/"
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/acces-chemin-de-nietzsche",
+      "anchor": "Organiser les transports",
+      "description": "Distinguer la gare du village et préparer le retour."
+    },
+    {
+      "href": "/difficulte-chemin-de-nietzsche",
+      "anchor": "Évaluer le terrain et la difficulté",
+      "description": "Marches, soleil et appuis : les précautions avant de partir."
+    }
+  ],
+  "slug": "/monter-ou-descendre-chemin-de-nietzsche",
+  "title": "Monter ou descendre le Chemin de Nietzsche ?",
+  "description": "Choisir le sens de marche entre Èze-sur-Mer et Èze Village, puis organiser une randonnée en aller simple ou un aller-retour.",
+  "hero": "Choisir le sens de marche entre Èze-sur-Mer et Èze Village, puis organiser une randonnée en aller simple ou un aller-retour.",
+  "snippetLead": "Montez depuis la mer si vous souhaitez consacrer votre effort à l’ascension ; descendez depuis le village si vous préférez limiter cet effort. Dans les deux sens, les marches et le sol irrégulier demandent de la stabilité. Décidez du transport de retour avant de partir.",
+  "summary": "Montez depuis la mer si vous souhaitez consacrer votre effort à l’ascension ; descendez depuis le village si vous préférez limiter cet effort. Dans les deux sens, les marches et le sol irrégulier demandent de la stabilité. Décidez du transport de retour avant de partir.",
+  "quickFacts": [
+    {
+      "label": "Montée",
+      "value": "Mer → village"
+    },
+    {
+      "label": "Descente",
+      "value": "Village → mer"
+    },
+    {
+      "label": "Tracé officiel",
+      "value": "2,1 km"
+    },
+    {
+      "label": "Retour",
+      "value": "À organiser séparément"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Choisir selon la sortie souhaitée",
+      "table": {
+        "headers": [
+          "Votre priorité",
+          "Organisation possible",
+          "Point à anticiper"
+        ],
+        "rows": [
+          [
+            "Terminer par le village",
+            "Train vers Èze-sur-Mer, puis montée",
+            "Prévoir le retour depuis le village"
+          ],
+          [
+            "Terminer au bord de mer",
+            "Bus vers le village, puis descente",
+            "Vérifier le train depuis Èze-sur-Mer"
+          ],
+          [
+            "Éviter une seconde marche",
+            "Aller simple à pied, liaison en transport",
+            "Consulter les correspondances avant le départ"
+          ],
+          [
+            "Revenir à une voiture",
+            "Aller-retour ou liaison entre les deux niveaux",
+            "Le point d’arrivée à pied ne sera pas votre parking"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "La descente reste une randonnée",
+      "paragraphs": [
+        "Réduire l’effort de montée ne supprime pas les difficultés du terrain. La fiche touristique décrit une première partie cimentée, des marches et une portion pavée. Descendez à votre rythme avec des chaussures qui accrochent, en gardant de la marge pour les arrêts.",
+        "Si vos appuis sont incertains, si vous êtes déjà fatigué ou si le sol est glissant, la liaison en transport entre mer et village permet de renoncer à la marche. Vérifiez sa disponibilité au moment de votre visite."
+      ]
+    },
+    {
+      "title": "Quelle marge prévoir dans la journée ?",
+      "paragraphs": [
+        "La fiche de l’Office de Tourisme Nice Côte d’Azur affiche 1 h 30 et 350 m D+ dans ses caractéristiques, mais 1 h et 400 m dans son texte. Ces indications divergent : ne les transformez pas en horaire garanti. Ajoutez vos pauses, la visite du village et l’attente des transports.",
+        "Aucune durée précise de descente n’est retenue ici : votre aisance sur les marches, la météo et les arrêts peuvent modifier fortement le temps nécessaire. Pour un aller-retour, prévoyez deux passages sur le sentier et évitez de caler votre arrivée sur le dernier départ disponible."
+      ]
+    },
+    {
+      "title": "Avant de vous engager",
+      "bullets": [
+        "Consultez la météo et la signalisation locale ; un descriptif en ligne ne confirme pas l’ouverture du jour.",
+        "Emportez eau, protection solaire et chaussures adaptées dès le départ.",
+        "En forte chaleur, adaptez l’heure ou renoncez à la marche.",
+        "Enregistrez les deux destinations distinctes : Èze Village et la gare d’Èze-sur-Mer."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Peut-on faire seulement la descente ?",
+      "answer": "Oui, en rejoignant d’abord Èze Village et en terminant à Èze-sur-Mer. Vérifiez votre transport vers le village et le retour depuis la mer."
+    },
+    {
+      "question": "Est-ce une boucle ?",
+      "answer": "Le sentier relie deux niveaux d’Èze. Un aller simple ne vous ramène pas au point de départ : prévoyez une liaison en transport ou une seconde marche."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Office de Tourisme — caractéristiques du sentier",
+      "href": "https://www.explorenicecotedazur.com/itineraire/chemin-de-nietzsche/"
+    },
+    {
+      "label": "Office de Tourisme — transports entre mer et village",
+      "href": "https://www.explorenicecotedazur.com/en/explore/towns-villages/coastal-area/eze/get-to-eze/"
+    }
+  ]
+},
+histoire: {
+  "eyebrow": "Préparer sa visite",
+  "ctas": [
+    {
+      "label": "Fiche officielle du sentier",
+      "href": "https://www.explorenicecotedazur.com/itineraire/chemin-de-nietzsche/"
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/acces-chemin-de-nietzsche",
+      "anchor": "Organiser les transports",
+      "description": "Distinguer la gare du village et préparer le retour."
+    },
+    {
+      "href": "/difficulte-chemin-de-nietzsche",
+      "anchor": "Évaluer le terrain et la difficulté",
+      "description": "Marches, soleil et appuis : les précautions avant de partir."
+    }
+  ],
+  "slug": "/histoire-chemin-de-nietzsche-eze",
+  "title": "Nietzsche et Èze : comprendre le nom du sentier",
+  "description": "Le lien entre Friedrich Nietzsche, la Riviera et le village d’Èze, avec des repères historiques pour prolonger la marche.",
+  "hero": "Le lien entre Friedrich Nietzsche, la Riviera et le village d’Èze, avec des repères historiques pour prolonger la marche.",
+  "snippetLead": "Le nom du sentier évoque les séjours de Friedrich Nietzsche sur la Riviera à partir de 1883. L’Office de Tourisme associe cette marche à la création de la troisième partie d’Ainsi parlait Zarathoustra. Le village possède une histoire bien antérieure à cette association littéraire.",
+  "summary": "Le nom du sentier évoque les séjours de Friedrich Nietzsche sur la Riviera à partir de 1883. L’Office de Tourisme associe cette marche à la création de la troisième partie d’Ainsi parlait Zarathoustra. Le village possède une histoire bien antérieure à cette association littéraire.",
+  "quickFacts": [
+    {
+      "label": "Nietzsche",
+      "value": "Séjours sur la Riviera dès 1883"
+    },
+    {
+      "label": "Èze",
+      "value": "Village perché et bord de mer"
+    },
+    {
+      "label": "Patrimoine",
+      "value": "Histoire distincte du philosophe"
+    },
+    {
+      "label": "Lecture",
+      "value": "Sources touristiques et municipales"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Ce que les sources disent de Nietzsche",
+      "paragraphs": [
+        "L’Office de Tourisme présente le parcours comme une marche fréquentée par Nietzsche pendant ses séjours sur la Côte d’Azur. Il situe son premier séjour de décembre 1883 à avril 1884 et relie le sentier à la troisième partie d’Ainsi parlait Zarathoustra.",
+        "Cette présentation donne un contexte littéraire à la randonnée. Elle ne permet pas d’identifier un lieu exact de rédaction sur le chemin : mieux vaut comprendre ce lien comme une association entre marche, paysage et création, plutôt que chercher un point précis où un texte aurait été écrit."
+      ]
+    },
+    {
+      "title": "Un village dont l’histoire précède le sentier littéraire",
+      "paragraphs": [
+        "La chronologie municipale mentionne Èze dans un document de 1075 et rappelle son rattachement à la Savoie en 1388. Elle situe la destruction du château en 1706, puis le rattachement définitif à la France en 1860. Ces repères expliquent pourquoi la visite du village dépasse le seul souvenir de Nietzsche.",
+        "En arrivant en haut, prenez le temps d’observer la forme défensive du village et ses ruelles. Le relief qui rend la marche exigeante aide aussi à comprendre le choix ancien d’un site perché. Il s’agit ici d’une lecture du paysage, sans ajouter de détour au tracé du sentier."
+      ]
+    },
+    {
+      "title": "Relier lecture et visite sans confondre les lieux",
+      "paragraphs": [
+        "Èze-sur-Mer, au niveau du train, et Èze Village, sur la hauteur, ne désignent pas le même point d’arrivée. Le Chemin de Nietzsche relie ces deux niveaux. Organisez le temps consacré au village séparément du temps de randonnée.",
+        "Pour préparer une visite patrimoniale, consultez la présentation historique de la mairie. Pour l’état du parcours, le terrain et l’accès, utilisez les informations touristiques et la signalisation locale. Une page d’histoire ne confirme ni l’ouverture du sentier ni celle des monuments."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Nietzsche a-t-il donné son nom au village ?",
+      "answer": "Non. Le nom du sentier lui rend hommage ; la chronologie municipale atteste le nom d’Èze dès 1075, bien avant ses séjours sur la Riviera."
+    },
+    {
+      "question": "Peut-on localiser un lieu de rédaction sur le sentier ?",
+      "answer": "La présentation touristique relie le parcours à Ainsi parlait Zarathoustra, mais ne donne pas de point de rédaction précis à visiter."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Office de Tourisme — Nietzsche et le parcours",
+      "href": "https://www.explorenicecotedazur.com/itineraire/chemin-de-nietzsche/"
+    },
+    {
+      "label": "Mairie d’Èze — histoire et chronologie",
+      "href": "https://ville-eze.fr/histoire/"
+    }
+  ]
+},
+
   carte: {
     slug: "/carte-chemin-de-nietzsche",
     title: "Carte du Chemin de Nietzsche à Èze",
@@ -42,7 +254,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
     hero:
       "Cette page rassemble les infos les plus utiles pour suivre la carte du Chemin de Nietzsche entre la gare d’Èze-sur-Mer et Èze Village.",
     snippetLead:
-      "Cette page répond directement à la question \\\"où voir la carte du Chemin de Nietzsche ?\\\" avec le départ le plus courant près de la gare d’Èze-sur-Mer, l'arrivée à Èze Village et les repères les plus utiles pour suivre le tracé.",
+      "Cette page répond directement à la question où voir la carte du Chemin de Nietzsche ? avec le départ le plus courant près de la gare d’Èze-sur-Mer, l'arrivée à Èze Village et les repères les plus utiles pour suivre le tracé.",
     summary:
       "Le tracé le plus recherché part de la gare d’Èze-sur-Mer, rejoint le sentier du Chemin de Nietzsche, puis remonte jusqu’au village médiéval d’Èze. C'est l'itinéraire le plus simple à comprendre pour un visiteur qui prépare sa marche sur mobile.",
     quickFacts: [
@@ -157,7 +369,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
     hero:
       "Le Chemin de Nietzsche est court, mais la difficulté ressentie dépend beaucoup du soleil, du sens choisi et de votre habitude de marche en terrain irrégulier.",
     snippetLead:
-      "Cette page répond directement à la question \\\"le Chemin de Nietzsche est-il difficile ?\\\" : la randonnée est généralement classée comme modérée, mais la montée depuis la gare d’Èze-sur-Mer peut sembler exigeante à cause du dénivelé, des marches et de la chaleur.",
+      "Cette page répond directement à la question le Chemin de Nietzsche est-il difficile ? : la randonnée est généralement classée comme modérée, mais la montée depuis la gare d’Èze-sur-Mer peut sembler exigeante à cause du dénivelé, des marches et de la chaleur.",
     summary:
       "La plupart des visiteurs classent le Chemin de Nietzsche comme une randonnée modérée. La distance est relativement courte, mais la montée, les marches et l'exposition au soleil rendent l'effort plus sérieux qu'il n'en a l'air sur le papier.",
     quickFacts: [
@@ -252,24 +464,30 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
     ],
   },
   acces: {
+    sources: [{ label: "Office de Tourisme — accès à Èze", href: "https://www.explorenicecotedazur.com/en/explore/towns-villages/coastal-area/eze/get-to-eze/" }],
     slug: "/acces-chemin-de-nietzsche",
     title: "Accès au Chemin de Nietzsche",
     description:
-      "Accès au Chemin de Nietzsche avec train jusqu’à la gare d’Èze-sur-Mer pour la montée, ou départ depuis Èze Village pour une version plus facile de la randonnée.",
+      "Accès au Chemin de Nietzsche avec train jusqu’à la gare d’Èze-sur-Mer pour la montée, ou départ depuis Èze Village pour descendre le sentier.",
     eyebrow: "Guide détaillé",
     hero:
       "Pour rejoindre le Chemin de Nietzsche, le plus simple est de choisir votre point de départ selon votre sens de marche : gare d’Èze-sur-Mer pour monter, Èze Village pour descendre.",
     snippetLead:
-      "Cette page répond directement à la question \\\"comment accéder au Chemin de Nietzsche ?\\\" : pour la montée, l'accès le plus simple se fait en train jusqu’à la gare d’Èze-sur-Mer ; pour une version plus facile, beaucoup de visiteurs commencent à Èze Village puis descendent.",
+      "Cette page répond directement à la question comment accéder au Chemin de Nietzsche ? : pour la montée, l'accès le plus simple se fait en train jusqu’à la gare d’Èze-sur-Mer ; pour descendre, beaucoup de visiteurs commencent à Èze Village puis descendent.",
     summary:
-      "L'accès le plus pratique pour la montée se fait via la gare d’Èze-sur-Mer. Pour une version plus simple, beaucoup de visiteurs rejoignent d'abord Èze Village en bus ou en voiture avant de redescendre à pied.",
+      "L'accès le plus pratique pour la montée se fait via la gare d’Èze-sur-Mer. Pour descendre, beaucoup de visiteurs rejoignent d'abord Èze Village en bus ou en voiture avant de redescendre à pied.",
     quickFacts: [
       { label: "Train", value: factValues.start },
       { label: "Bus", value: "Possible via Èze Village" },
-      { label: "Parking", value: "Plus simple en haut" },
+      { label: "Parking", value: "Retour à organiser" },
       { label: "Arrivée", value: factValues.end },
     ],
     sections: [
+      {
+        title: "Sans voiture : distinguer la gare et le village",
+        paragraphs: ["Le TER arrive à Èze-sur-Mer, sur le littoral, et non au village perché. Selon l’Office de Tourisme, la ligne 83 relie la gare au village ; depuis Nice, la ligne 82 dessert Èze Village depuis Vauban. Vérifiez le parcours, le jour de circulation et les horaires sur Lignes d’Azur avant de partir.", "Pour un aller simple à pied, choisissez d’abord votre retour : train depuis la mer après la descente, ou bus depuis le village après la montée. Ne supposez pas qu’une correspondance sera disponible immédiatement. Les horaires et les lignes peuvent changer."],
+        bullets: ["Pour monter : TER vers Èze-sur-Mer, marche jusqu’au village, puis retour en transport à préparer.", "Pour descendre : bus vers Èze Village, marche vers la mer, puis TER à vérifier.", "Pour éviter le sentier : vérifiez la liaison en bus entre les deux niveaux plutôt que de considérer la marche comme obligatoire."]
+      },
       {
         title: "Comment aller au Chemin de Nietzsche ?",
         paragraphs: [
@@ -321,7 +539,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
       {
         question: "Faut-il commencer par le village ou par la mer ?",
         answer:
-          "Pour un effort plus sportif, commencez par la mer. Pour une version plus facile, commencez par Èze Village puis descendez.",
+          "Pour un effort plus sportif, commencez par la mer. Pour limiter l’effort de montée, commencez par Èze Village puis descendez.",
       },
       {
         question: "Quelle gare pour accéder au Chemin de Nietzsche ?",
@@ -354,6 +572,7 @@ export const topicPages: Record<TopicPageKey, TopicPageData> = {
 };
 
 export const topicLinks = [
+  ...(["sens", "histoire"] as const).map((key) => ({ href: topicPages[key].slug, title: topicPages[key].title, description: topicPages[key].description })),
   {
     href: topicPages.carte.slug,
     title: "Carte du Chemin de Nietzsche",
@@ -367,7 +586,7 @@ export const topicLinks = [
   {
     href: topicPages.acces.slug,
     title: "Accès au Chemin de Nietzsche",
-    description: "Accès au Chemin de Nietzsche avec train jusqu’à la gare d’Èze-sur-Mer pour la montée, ou départ depuis Èze Village pour une version plus facile de la randonnée.",
+    description: "Accès au Chemin de Nietzsche avec train jusqu’à la gare d’Èze-sur-Mer pour la montée, ou départ depuis Èze Village pour descendre le sentier.",
   },
 ];
 

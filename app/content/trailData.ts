@@ -12,7 +12,7 @@ export const HERO_IMAGE = "/images/home/chemin-de-nietzsche-eze-hero.jpg";
 export const factValues = {
   distance: "2,1 km",
   durationUp: "1h à 1h30",
-  durationDown: "45 à 60 min",
+  durationDown: "Variable selon les appuis",
   elevation: "350-400 m D+",
   difficulty: "Modérée",
   start: "Gare d’Èze-sur-Mer",
@@ -231,7 +231,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
       "Sentier reliant Èze-sur-Mer au village médiéval d’Èze, avec vues sur la Méditerranée, dénivelé soutenu et accès simple depuis la gare.",
     altNamesLabel: "Aussi recherché sous",
     altNames: ["Chemin de Nietzsche Èze", "Sentier de Nietzsche", "Nietzsche Path"],
-    ratingLabel: "4.5/5 sur Google Maps",
+    ratingLabel: "4,5/5 · 1 118 avis Google Maps · 02/11/2026",
     quickFactsTitle: "Les infos utiles en un coup d’œil",
     factLabels: {
       distance: "Distance",
@@ -275,10 +275,10 @@ export const pageCopy: Record<Locale, PageCopy> = {
       duration: {
         title: "Combien de temps pour faire le Chemin de Nietzsche ?",
         intro:
-          "La durée dépend surtout du sens choisi et du nombre d'arrêts photo. La référence la plus fréquente est autour d'1h à 1h30 pour la montée.",
+          "La fiche touristique officielle affiche 1 h 30 / 350 m D+ dans ses caractéristiques et 1 h / 400 m dans le texte. Ces repères divergent : ajoutez vos pauses et vérifiez les conditions locales.",
         bullets: [
           "Montée : environ 1h à 1h30 depuis Èze-sur-Mer.",
-          "Descente : environ 45 à 60 minutes depuis Èze Village.",
+          "Descente : prévoyez une marge selon votre aisance sur les marches et vos pauses.",
           "Ajoutez du temps si vous visitez le village, prenez beaucoup de photos ou marchez en plein été.",
           "Un départ tôt le matin rend l'effort plus confortable et la lumière souvent meilleure.",
         ],
@@ -290,7 +290,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
         bullets: [
           "Train : descendre à la gare d’Èze-sur-Mer puis rejoindre le sentier à pied.",
           "Bus : vous pouvez aussi rejoindre Èze Village et faire la descente.",
-          "Parking : plus simple à gérer en haut si vous combinez avec la visite du village.",
+          "Voiture : prévoyez comment revenir à votre parking après un trajet à pied en aller simple.",
           "Astuce : vérifiez toujours la chaleur et emportez de l'eau avant de partir.",
         ],
       },
@@ -301,14 +301,14 @@ export const pageCopy: Record<Locale, PageCopy> = {
           { label: "Départ", up: "Èze-sur-Mer", down: "Èze Village" },
           { label: "Effort", up: "Plus exigeant", down: "Plus facile au cardio" },
           { label: "Vue mer", up: "Régulière", down: "Souvent face à vous" },
-          { label: "Durée", up: "1h à 1h30", down: "45 à 60 min" },
+          { label: "Durée", up: "1h à 1h30", down: "Variable selon les appuis" },
           { label: "Idéal pour", up: "Randonneurs motivés", down: "Visiteurs occasionnels" },
         ],
       },
       photos: {
         title: "Photos du Chemin de Nietzsche",
         intro:
-          "Les recherches autour des photos montrent que les visiteurs veulent surtout voir le dénivelé, la vue mer et l'arrivée vers Èze. Chaque image ci-dessous est décrite avec un texte alt plus explicite pour renforcer la compréhension du sentier.",
+          "Découvrez le terrain, les marches, les vues sur la Méditerranée et l’arrivée au village à travers ces photos du sentier.",
       },
       history: {
         title: "Histoire et contexte",
@@ -365,7 +365,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
       "A scenic trail linking Eze-sur-Mer to medieval Eze Village, with Mediterranean views, a steady climb, and easy access from the train station.",
     altNamesLabel: "Also searched as",
     altNames: ["Chemin de Nietzsche", "Nietzsche Trail", "Chemin de Nietzsche Eze"],
-    ratingLabel: "4.5/5 on Google Maps",
+    ratingLabel: "4.5/5 · 1,118 Google Maps reviews · 2 Nov 2026",
     quickFactsTitle: "Key visitor facts",
     factLabels: {
       distance: "Distance",
@@ -409,10 +409,10 @@ export const pageCopy: Record<Locale, PageCopy> = {
       duration: {
         title: "How long does it take to hike the Nietzsche Path?",
         intro:
-          "Timing depends on direction, weather, and photo stops. The most common reference point is around 1 to 1.5 hours for the uphill hike.",
+          "The official tourist listing gives 1 h 30 / 350 m gain in its summary and 1 h / 400 m in its text. These figures differ: allow extra time for breaks and check local conditions.",
         bullets: [
           "Uphill: about 1 to 1.5 hours from Eze-sur-Mer.",
-          "Downhill: about 45 to 60 minutes from Eze Village.",
+          "Downhill: allow time for uneven steps and breaks; no fixed duration is guaranteed.",
           "Add extra time if you plan to explore the village or stop frequently for photos.",
           "An early start usually means cooler temperatures and softer light.",
         ],
@@ -424,7 +424,7 @@ export const pageCopy: Record<Locale, PageCopy> = {
         bullets: [
           "Train: get off at Eze-sur-Mer station and walk to the trail.",
           "Bus: you can also reach Eze Village first and walk down.",
-          "Parking: easier to combine with a village visit if you start from the top.",
+          "Driving: plan how to return to your parking place after a one-way walk.",
           "Tip: check heat conditions and carry enough water before you start.",
         ],
       },
@@ -435,14 +435,14 @@ export const pageCopy: Record<Locale, PageCopy> = {
           { label: "Start", up: "Eze-sur-Mer", down: "Eze Village" },
           { label: "Effort", up: "More demanding", down: "Easier cardio-wise" },
           { label: "Sea views", up: "Frequent", down: "Often right ahead" },
-          { label: "Time", up: "1 to 1.5 hours", down: "45 to 60 min" },
+          { label: "Time", up: "1 to 1.5 hours", down: "Depends on footing" },
           { label: "Best for", up: "Motivated hikers", down: "Casual visitors" },
         ],
       },
       photos: {
         title: "Nietzsche Path Photos",
         intro:
-          "People searching for trail photos usually want to understand the gradient, sea views, and what the approach to Eze looks like. Each image uses a descriptive alt text to make that clearer.",
+          "Explore the trail’s steps, rocky terrain, Mediterranean views and approach to the village in these photographs.",
       },
       history: {
         title: "History and context",
