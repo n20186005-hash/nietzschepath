@@ -509,7 +509,7 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
               {locale === "fr" ? "Guides détaillés du Chemin de Nietzsche" : "Detailed Nietzsche Path guides"}
             </h2>
             <p className="mt-4 text-lg leading-8 text-stone-700 dark:text-stone-300">
-              {locale === "fr" ? "Pour préparer votre marche, retrouvez nos pages détaillées sur la carte, la difficulté et les accès." : "Plan your walk with our detailed pages on maps, difficulty and getting there."}
+              {locale === "fr" ? "Préparez votre marche : carte, difficulté, accès, choix du sens et histoire d’Èze." : "Explore our French-language guides to the map, difficulty, transport, walking direction and Èze’s history."}
             </p>
           </div>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
@@ -519,8 +519,8 @@ export default function TrailGuidePage({ locale }: TrailGuidePageProps) {
                 href={link.href}
                 className="rounded-2xl border border-stone-200 bg-stone-50 px-5 py-5 text-stone-700 transition hover:text-black dark:border-stone-800 dark:bg-black/20 dark:text-stone-300 dark:hover:text-white"
               >
-                <p className="text-lg text-stone-900 dark:text-stone-100">{link.title}</p>
-                <p className="mt-2 text-sm leading-6">{link.description}</p>
+                <p className="text-lg text-stone-900 dark:text-stone-100" lang="fr">{link.title}{locale === "en" ? " (French)" : ""}</p>
+                <p className="mt-2 text-sm leading-6" lang="fr">{link.description}</p>
               </Link>
             ))}
           </div>

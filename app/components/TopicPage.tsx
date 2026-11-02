@@ -231,6 +231,12 @@ export default function TopicPage({ topicKey }: TopicPageProps) {
           </section>
         )}
 
+        {topic.sources && <section className="rounded-[28px] border border-stone-200 p-8 dark:border-stone-800">
+          <h2 className="font-serif text-3xl">Sources et vérification</h2>
+          <p className="mt-4">Sources consultées le 2 novembre 2026. Vérifiez les conditions locales avant votre visite.</p>
+          <ul className="mt-4 space-y-3">{topic.sources.map((source) => <li key={source.href}><a className="underline underline-offset-4" href={source.href} target="_blank" rel="noopener noreferrer">{source.label} ↗</a></li>)}</ul>
+        </section>}
+
         <section className="grid gap-6 lg:grid-cols-3">
           {topicGallery.map((image) => (
             <a
@@ -251,7 +257,7 @@ export default function TopicPage({ topicKey }: TopicPageProps) {
         <section className="rounded-[28px] border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-white/5">
           <h2 className="font-serif text-3xl text-black dark:text-white">Questions fréquentes</h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-stone-700 dark:text-stone-300">
-            Ces réponses ciblent les recherches les plus fréquentes autour de la carte, de la difficulté, du départ, de la gare et de l’accès en train.
+            Les points à retenir pour préparer votre visite.
           </p>
           <div className="mt-8 space-y-5">
             {topic.faqs.map((faq) => (

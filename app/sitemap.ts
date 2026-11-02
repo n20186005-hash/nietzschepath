@@ -4,6 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.nietzschepath.com";
 
   return [
+    ...["monter-ou-descendre-chemin-de-nietzsche", "histoire-chemin-de-nietzsche-eze"].map((slug) => ({ url: `${baseUrl}/${slug}`, lastModified: new Date("2026-11-02"), changeFrequency: "monthly" as const, priority: 0.8 })),
     {
       url: `${baseUrl}/`,
       lastModified: new Date(),
